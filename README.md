@@ -1,4 +1,4 @@
-![EldritchFoundation Logo](eldritchfoundation/public/gh-art/eldritchfoundation.webp)
+![EldritchFoundation Logo](https://github.com/ballermatic/eldritchfoundation/blob/main/public/gh-art/eldritchfoundation.webp)
 
 # Eldritch Foundation
 
