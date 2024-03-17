@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div
       className='bg-cover bg-center bg-fixed min-h-screen'
@@ -31,7 +31,7 @@ export default function Home() {
 
         <div className="relative z-10 flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial from-white to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic from-white to-transparent after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br from-white to-transparent before:dark:opacity-10 after:dark:from-white after:dark:to-transparent after:dark:opacity-40 before:lg:h-[360px]">
           <Image
-            className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
+            className='relative'
             src='/gh-art/eldritchfoundation.webp'
             alt='HP Lovecraft loves this logo'
             width={300}
