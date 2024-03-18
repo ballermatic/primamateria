@@ -138,7 +138,7 @@ const config: Config = {
         '900': 'oklch(43.28% 0.184 345.52 / <alpha-value>)',
         '950': 'oklch(39.08% 0.169 340.48 / <alpha-value>)',
       },
-      chimney: {
+      gray: {
         '50': 'oklch(97.64% 0.001 286.38 / <alpha-value>)',
         '100': 'oklch(94.44% 0.003 308.43 / <alpha-value>)',
         '200': 'oklch(89.64% 0.006 297.72 / <alpha-value>)',
