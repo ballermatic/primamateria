@@ -1,8 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import '@/styles/tailwind.css';
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+
+const fontSans = localFont({
+  src: '../fonts/MonaSans-variable.woff2',
+  display: 'swap',
+  variable: '--font-sans',
+});
 
 export const metadata: Metadata = {
   title: 'Eldritch Foundation',
@@ -16,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <body className={`${fontSans.variable}`}>{children}</body>
     </html>
   );
 }

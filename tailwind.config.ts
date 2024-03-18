@@ -1,5 +1,7 @@
-const safelist = require('./tailwindSafelist');
 import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
+
+const safelist = require('./tailwindSafelist');
 
 const config: Config = {
   content: [
@@ -8,6 +10,15 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
+        display: [
+          ['Mona Sans', ...defaultTheme.fontFamily.sans],
+          { fontVariationSettings: '"wdth" 125' },
+        ],
+      },
+    },
     colors: {
       white: '#fff',
       bluebird: {
@@ -206,12 +217,6 @@ const config: Config = {
         '950': 'oklch(0% 0 NaN / <alpha-value>)',
       },
     },
-    // extend: {
-    //   backgroundImage: {
-    //     'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-    //     'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-    //   },
-    // },
   },
   plugins: [],
   safelist: safelist,
