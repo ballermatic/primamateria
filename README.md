@@ -7,7 +7,10 @@ In the stygian depths, arcane scripts and eldritch styles twist reality, forging
 ## Arcanum Mechanica: The Unearthly Conduits of Creation
 
 - Next.js TypeScript
-- Tailwind CSS 3.4.x
 - ESLint + Prettier
 - Bundle Analyzer
 - Next Sitemap
+- Tailwind CSS 3.4.x
+  - [Tailwind Fluid](https://fluid.tw/)
+- Mona Sans variable font
+  - Custom heading classes

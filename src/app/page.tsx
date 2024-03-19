@@ -5,7 +5,7 @@ export default function HomePage() {
     <div
       className='bg-cover bg-center bg-fixed min-h-screen'
       style={{ backgroundImage: 'url(gh-art/hp-bg.webp)', zIndex: -1 }}>
-      <main className='text-white flex min-h-screen flex-col items-center justify-between p-24'>
+      <main className='text-white flex min-h-screen flex-col items-center justify-between'>
         <div className='z-10 max-w-5xl w-full items-center justify-between text-sm lg:flex'>
           <a
             className='fixed left-0 top-0 flex w-full justify-center border-gray-500 hover:border-gray-100 pb-6 pt-8 backdrop-blur-sm hover:backdrop-blur-xl from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:p-4 shadow-2xl shadow-smoke-500'

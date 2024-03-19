@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Mona Sans';
+    font-weight: 200 900;
+    font-display: block;
+    font-style: normal;
+    font-stretch: 75% 125%;
+    src: url('../fonts/MonaSans-variable.woff2') format('woff2');
+  }
+}
+@layer utilities {
+  /*
+  Using the fluid plugin for font size
+  Adjust weight, letter spacing, line height based on font choice
+  */
+  .caps {
+    @apply uppercase;
+    font-stretch: 125% !important;
+    letter-spacing: 0.25em !important;
+    line-height: 1;
+  }
+  .exa {
+    @apply ~text-6xl/8xl;
+    letter-spacing: -0.05em;
+    line-height: 1;
+  }
+  .peta {
+    @apply ~text-5xl/7xl;
+    letter-spacing: -0.033em;
+    line-height: 1;
+  }
+  .tera {
+    @apply ~text-4xl/6xl;
+    letter-spacing: -0.0275em;
+    line-height: 1;
+  }
+  .giga {
+    @apply ~text-3xl/5xl;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .mega {
+    @apply ~text-2xl/4xl;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .kilo {
+    @apply ~text-xl/3xl;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .nano {
+    @apply ~text-xxs/xs !important;
+    letter-spacing: 0.125em;
+  }
+}

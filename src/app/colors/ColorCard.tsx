@@ -12,7 +12,7 @@ const ColorCard: React.FC<ColorCardProps> = ({ colorName, colorShades }) => {
           key={shade}
           className='flex-auto'>
           <div className={`h-24 mb-1 bg-${colorName}-${shade}`}></div>
-          <p className='text-sm'>{shade}</p>
+          <p className='text-xs'>{shade}</p>
         </div>
       ))}
     </div>

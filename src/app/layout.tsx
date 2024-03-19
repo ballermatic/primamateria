@@ -1,4 +1,4 @@
-import '@/styles/tailwind.css';
+import '@/styles/styles.css';
 
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';

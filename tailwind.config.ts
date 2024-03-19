@@ -1,22 +1,32 @@
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
+import {
+  fluidExtractor,
+  fluidCorePlugins,
+  defaultThemeScreensInRems,
+  defaultThemeFontSizeInRems,
+} from 'fluid-tailwind';
 
 const safelist = require('./tailwindSafelist');
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: {
+    files: [
+      './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+      './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    extract: fluidExtractor(),
+  },
   theme: {
+    fontSize: defaultThemeFontSizeInRems,
+    screens: defaultThemeScreensInRems,
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
-        display: [
-          ['Mona Sans', ...defaultTheme.fontFamily.sans],
-          { fontVariationSettings: '"wdth" 125' },
-        ],
+      },
+      fontSize: {
+        xxs: '0.625rem',
       },
     },
     colors: {
@@ -218,7 +228,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [fluidCorePlugins],
   safelist: safelist,
 };
 export default config;
