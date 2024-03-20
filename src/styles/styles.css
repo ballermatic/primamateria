@@ -5,23 +5,25 @@
 @layer base {
   @font-face {
     font-family: 'Mona Sans';
-    font-weight: 200 900;
+    font-weight: 290 700;
     font-display: block;
     font-style: normal;
     font-stretch: 75% 125%;
     src: url('../fonts/MonaSans-variable.woff2') format('woff2');
   }
 }
+
 @layer utilities {
   /*
   Using the fluid plugin for font size
   Adjust weight, letter spacing, line height based on font choice
   */
+
   /* Headings */
   .caps {
     @apply uppercase;
     font-stretch: 125% !important;
-    letter-spacing: 0.25em !important;
+    letter-spacing: 0.125em !important;
     line-height: 1;
   }
   .exa {
@@ -77,6 +79,16 @@
   }
   .narrative > p {
     @apply ~text-base/lg;
+    @apply text-balance;
+    @apply max-w-prose;
+    @apply hyphens-auto;
+    @apply mb-3;
+    font-weight: 290;
+    font-stretch: 103%;
+    line-height: 1.67;
+  }
+  .caption > p {
+    @apply ~text-sm/base;
     @apply text-balance;
     @apply max-w-prose;
     @apply hyphens-auto;

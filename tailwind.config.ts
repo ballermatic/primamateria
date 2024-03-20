@@ -19,8 +19,11 @@ const config: Config = {
     extract: fluidExtractor(),
   },
   theme: {
-    fontSize: defaultThemeFontSizeInRems,
-    screens: defaultThemeScreensInRems,
+    // Manually replaced rather than using fluid-tailwind defaultThemeScreensInRems, defaultThemeFontSizeInRems due to bug and desiring ems for screens
+    // fontSize: defaultThemeFontSizeInRems,
+    // screens: defaultThemeScreensInRems,
+    fontSize: defaultThemeFontSizeInRems, // todo
+    screens: defaultThemeScreensInRems, // todo
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],

@@ -74,6 +74,24 @@ export default function TypographyPage() {
           <span className='nano caps text-gray-500'>classname:</span> narrative
         </p>
       </div>
+      <div className='pt-12'>
+        <div className='caption'>
+          <p>
+            On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café,
+            merging with the city’s vibrant pulse. A breeze whispered through the trees, carrying
+            snippets of chatter and the distant hum of traffic.
+          </p>
+          <p>
+            In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
+            their silhouettes a testament to time’s passage. The evening sky, painted in hues of
+            orange and purple, draped over the skyline, its colors reflecting in the glass facades
+            of towering skyscrapers.
+          </p>
+        </div>
+        <p className='mt-8 pt-2 border-t border-gray-300 tracking-wide'>
+          <span className='nano caps text-gray-500'>classname:</span> caption
+        </p>
+      </div>
     </main>
   );
 }
