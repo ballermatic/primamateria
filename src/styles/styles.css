@@ -29,36 +29,42 @@
   .exa {
     @apply ~text-6xl/8xl;
     @apply text-balance;
+    font-weight: 560;
     letter-spacing: -0.05em;
     line-height: 1;
   }
   .peta {
     @apply ~text-5xl/7xl;
     @apply text-balance;
+    font-weight: 535;
     letter-spacing: -0.033em;
     line-height: 1;
   }
   .tera {
     @apply ~text-4xl/6xl;
     @apply text-balance;
+    font-weight: 509;
     letter-spacing: -0.0275em;
     line-height: 1;
   }
   .giga {
     @apply ~text-3xl/5xl;
     @apply text-balance;
+    font-weight: 484;
     letter-spacing: -0.02em;
     line-height: 1;
   }
   .mega {
     @apply ~text-2xl/4xl;
     @apply text-balance;
+    font-weight: 458;
     letter-spacing: -0.02em;
     line-height: 1;
   }
   .kilo {
     @apply ~text-xl/3xl;
     @apply text-balance;
+    font-weight: 433;
     letter-spacing: -0.02em;
     line-height: 1;
   }
