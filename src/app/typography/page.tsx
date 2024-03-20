@@ -1,7 +1,7 @@
 export default function TypographyPage() {
   return (
     <main className='container mx-auto flex min-h-screen flex-col ~p-3/8 text-smoke-500'>
-      <h1 className='font-bold text-4xl pb-12'>Typography</h1>
+      <h1 className='font-bold tracking-tight text-4xl text-gray-500 pb-12'>Typography</h1>
       <p className='mt-8 pb-2 border-b-2 border-smoke-500 font-bold'>Headings</p>
       <div className='pt-12'>
         <p className='exa'>Wandering Quails Roam Near Eucalyptus</p>
