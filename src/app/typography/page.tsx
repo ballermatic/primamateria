@@ -4,19 +4,19 @@ export default function TypographyPage() {
       <h1 className='giga text-gray-500 pb-12'>Typography</h1>
       <p className='mt-8 pb-2 border-b-2 border-smoke-500 font-bold'>Headings</p>
       <div className='pt-12'>
-        <p className='exa'>Wandering Quails Roam Near Eucalyptus</p>
+        <p className='exa'>Wandering Quails Deploy Eucalyptus Photons</p>
         <p className='mt-8 pt-2 border-t border-gray-300 tracking-wide'>
           <span className='nano caps text-gray-500'>classname:</span> exa
         </p>
       </div>
       <div className='pt-12'>
-        <p className='peta'>Mythical xylophones glisten</p>
+        <p className='peta'>Burgeoning Mythical Xylophones Glisten</p>
         <p className='mt-8 pt-2 border-t border-gray-300 tracking-wide'>
           <span className='nano caps text-gray-500'>classname:</span> peta
         </p>
       </div>
       <div className='pt-12'>
-        <p className='tera'>Kingly sparrows quiz the evening wind</p>
+        <p className='tera'>Kingly Sparrows Fly the Evening Plains</p>
         <p className='mt-8 pt-2 border-t border-gray-300 tracking-wide'>
           <span className='nano caps text-gray-500'>classname:</span> tera
         </p>
