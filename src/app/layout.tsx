@@ -1,3 +1,4 @@
+import Footer from '@/components/footer';
 import '@/styles/styles.css';
 
 import type { Metadata } from 'next';
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${fontSans.variable} text-smoke-500`}>{children}</body>
+      <body className={`${fontSans.variable} text-smoke-500`}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

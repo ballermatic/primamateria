@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <main className='flex min-h-screen flex-col gap-12 p-12 items-center bg-gray-100 bg-gradient-to-b from-smoke-500 to-50%'>
+    <main className='flex min-h-screen flex-col gap-12 p-12 items-center'>
       <div className='relative z-10 flex place-items-center'>
         <Image
           className='relative'
@@ -27,7 +27,7 @@ export default function HomePage() {
 
       <a
         href='/colors'
-        className='group rounded-sm border bg-white border-gray-200 hover:border-gray-500 px-5 p-6 shadow-xl shadow-gray-400'>
+        className='group rounded-sm border border-gray-400 hover:border-smoke-500 px-5 p-6'>
         <h2 className='caps font-medium mb-3'>
           Colors{' '}
           <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
@@ -42,7 +42,7 @@ export default function HomePage() {
 
       <a
         href='/typography'
-        className='group rounded-sm border bg-white border-gray-200 hover:border-gray-500 px-5 p-6 shadow-xl shadow-gray-400'>
+        className='group rounded-sm border border-gray-400 hover:border-smoke-500 px-5 p-6'>
         <h2 className='caps font-medium mb-3'>
           Typography{' '}
           <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
