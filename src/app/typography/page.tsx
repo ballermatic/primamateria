@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Eldritch Typography',
+  description: 'Mona Sans courtesy of Github, in a highly opinionated specimen.',
+};
+
 export default function TypographyPage() {
   return (
-    <main className='container mx-auto flex min-h-screen flex-col ~p-3/8 text-smoke-500'>
+    <main className='container mx-auto flex min-h-screen flex-col ~p-3/8'>
       <h1 className='giga text-gray-500 pb-12'>Typography</h1>
       <p className='mt-8 pb-2 border-b-2 border-smoke-500 font-bold'>Headings</p>
       <div className='pt-12'>
