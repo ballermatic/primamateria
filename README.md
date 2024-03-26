@@ -8,10 +8,10 @@ In the stygian depths, arcane scripts and eldritch styles twist reality, forging
 
 - Next.js TypeScript
 - ESLint + Prettier
-- Bundle Analyzer
-- Next Sitemap
+- [Bundle Analyzer](https://nextjs.org/docs/app/building-your-application/optimizing/bundle-analyzer)
+- [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - Tailwind CSS 3.4.x
   - [Tailwind Fluid](https://fluid.tw/)
-  - Default colors replaced [using OKLCH](https://www.tints.dev/)
-- Mona Sans variable font
+  - Default colors replaced with OKLCH via [tints.dev](https://www.tints.dev/)
+- [Mona Sans variable font](https://github.com/github/mona-sans)
   - Carefully tuned Mona Sans specific typography classes
