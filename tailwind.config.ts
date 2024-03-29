@@ -6,7 +6,8 @@ import {
   defaultThemeScreensInRems,
   defaultThemeFontSizeInRems,
 } from 'fluid-tailwind';
-import safelist from './tailwindSafelist';
+import fontVariarionSettingsPlugin from './tailwind/fontVariationSettingsPlugin';
+import safelist from './tailwind/tailwindSafelist';
 
 const config: Config = {
   content: {
@@ -18,11 +19,8 @@ const config: Config = {
     extract: fluidExtractor(),
   },
   theme: {
-    // Manually replaced rather than using fluid-tailwind defaultThemeScreensInRems, defaultThemeFontSizeInRems due to bug and desiring ems for screens
-    // fontSize: defaultThemeFontSizeInRems,
-    // screens: defaultThemeScreensInRems,
-    fontSize: defaultThemeFontSizeInRems, // todo
-    screens: defaultThemeScreensInRems, // todo
+    fontSize: defaultThemeFontSizeInRems,
+    screens: defaultThemeScreensInRems,
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
@@ -230,7 +228,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [fluidCorePlugins],
+  plugins: [fluidCorePlugins, fontVariarionSettingsPlugin],
   safelist: safelist, // remove if not using the colors page
 };
 export default config;
