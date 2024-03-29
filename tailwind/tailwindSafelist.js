@@ -153,16 +153,6 @@ const safelist = [
   'bg-pear-800',
   'bg-pear-900',
   'bg-pear-950',
-  'bg-smoke-50',
-  'bg-smoke-100',
-  'bg-smoke-200',
-  'bg-smoke-300',
-  'bg-smoke-400',
-  'bg-smoke-500',
-  'bg-smoke-600',
-  'bg-smoke-700',
-  'bg-smoke-800',
-  'bg-smoke-900',
-  'bg-smoke-950',
+  'bg-smoke',
 ];
 module.exports = safelist;

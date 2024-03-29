@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${fontSans.variable} text-smoke-500`}>
+      <body className={`${fontSans.variable} text-smoke`}>
         {children}
         <Footer />
       </body>
