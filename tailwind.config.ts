@@ -19,8 +19,10 @@ const config: Config = {
     extract: fluidExtractor(),
   },
   theme: {
+    // Change default units
     fontSize: defaultThemeFontSizeInRems,
     screens: defaultThemeScreensInRems,
+    // Additions
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
@@ -147,19 +149,6 @@ const config: Config = {
           '900': 'oklch(43.28% 0.184 345.52 / <alpha-value>)',
           '950': 'oklch(39.08% 0.169 340.48 / <alpha-value>)',
         },
-        gray: {
-          '50': 'oklch(97.64% 0.001 286.38 / <alpha-value>)',
-          '100': 'oklch(94.44% 0.003 308.43 / <alpha-value>)',
-          '200': 'oklch(89.64% 0.006 297.72 / <alpha-value>)',
-          '300': 'oklch(82.21% 0.008 286.22 / <alpha-value>)',
-          '400': 'oklch(73.97% 0.011 280.4 / <alpha-value>)',
-          '500': 'oklch(64.3% 0.014 266.65 / <alpha-value>)',
-          '600': 'oklch(58.22% 0.02 278.8 / <alpha-value>)',
-          '700': 'oklch(51.92% 0.02 289.2 / <alpha-value>)',
-          '800': 'oklch(41.47% 0.017 294.83 / <alpha-value>)',
-          '900': 'oklch(21.15% 0.006 301.03 / <alpha-value>)',
-          '950': 'oklch(0% 0 NaN / <alpha-value>)',
-        },
         splash: {
           '50': 'oklch(98.1% 0.013 221.42 / <alpha-value>)',
           '100': 'oklch(96.92% 0.022 217.63 / <alpha-value>)',
@@ -226,6 +215,13 @@ const config: Config = {
           '950': 'oklch(0% 0 NaN / <alpha-value>)',
         },
       },
+    },
+    // Overrides
+    letterSpacing: {
+      tightest: '-0.05em',
+      tighter: '-0.033em',
+      tight: '-0.02em',
+      tightish: '-0.01em',
     },
   },
   plugins: [fluidCorePlugins, fontVariarionSettingsPlugin],
