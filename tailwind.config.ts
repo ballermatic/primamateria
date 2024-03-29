@@ -6,8 +6,7 @@ import {
   defaultThemeScreensInRems,
   defaultThemeFontSizeInRems,
 } from 'fluid-tailwind';
-
-const safelist = require('./tailwindSafelist');
+import safelist from './tailwindSafelist';
 
 const config: Config = {
   content: {
@@ -232,6 +231,6 @@ const config: Config = {
     },
   },
   plugins: [fluidCorePlugins],
-  safelist: safelist,
+  safelist: safelist, // remove if not using the colors page
 };
 export default config;
