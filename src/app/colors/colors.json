@@ -1,6 +1,5 @@
 {
   "colors": {
-    "smoke": "oklch(18.26% 0.002 286.2 / <alpha-value>)",
     "bluebird": {
       "50": "oklch(97.77% 0.008 225.08 / <alpha-value>)",
       "100": "oklch(94.93% 0.019 230.7 / <alpha-value>)",
@@ -130,19 +129,6 @@
       "800": "oklch(59.3% 0.113 225.78 / <alpha-value>)",
       "900": "oklch(46.84% 0.094 230.66 / <alpha-value>)",
       "950": "oklch(36.77% 0.077 233.7 / <alpha-value>)"
-    },
-    "pink": {
-      "50": "oklch(98.89% 0.005 17.25 / <alpha-value>)",
-      "100": "oklch(96.81% 0.014 22.76 / <alpha-value>)",
-      "200": "oklch(93.94% 0.029 22.95 / <alpha-value>)",
-      "300": "oklch(90.82% 0.044 23.19 / <alpha-value>)",
-      "400": "oklch(87.77% 0.06 22.19 / <alpha-value>)",
-      "500": "oklch(83.91% 0.081 23.61 / <alpha-value>)",
-      "600": "oklch(78.46% 0.115 24.56 / <alpha-value>)",
-      "700": "oklch(71.82% 0.16 26.33 / <alpha-value>)",
-      "800": "oklch(64.14% 0.219 28.89 / <alpha-value>)",
-      "900": "oklch(49.87% 0.195 29.79 / <alpha-value>)",
-      "950": "oklch(41.15% 0.159 29.78 / <alpha-value>)"
     },
     "grenadine": {
       "50": "oklch(97.98% 0.01 25.07 / <alpha-value>)",
