@@ -1,10 +1,13 @@
-// ColorCard.tsx
-type ColorCardProps = {
-  colorName: string; // Make sure you pass the color name to this component
-  colorShades: Record<string, string>;
-};
+interface ColorShades {
+  [key: string]: string;
+}
 
-const ColorCard: React.FC<ColorCardProps> = ({ colorName, colorShades }) => {
+interface ColorCardProps {
+  colorName: string;
+  colorShades: ColorShades;
+}
+
+export default function ColorCard({ colorName, colorShades }: ColorCardProps) {
   return (
     <div className='flex flex-wrap sm:flex-nowrap'>
       {Object.entries(colorShades).map(([shade, _]) => (
@@ -17,6 +20,4 @@ const ColorCard: React.FC<ColorCardProps> = ({ colorName, colorShades }) => {
       ))}
     </div>
   );
-};
-
-export default ColorCard;
+}
