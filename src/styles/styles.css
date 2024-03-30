@@ -30,7 +30,7 @@
     @apply ~text-5xl/8xl;
     @apply text-balance;
     font-weight: 560;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.045em;
     line-height: 1;
   }
   .peta {

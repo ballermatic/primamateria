@@ -12,7 +12,7 @@ In the stygian depths, arcane scripts and eldritch styles twist reality, forging
 - [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - [Tailwind CSS 3.4.x](https://tailwindcss.com/)
   - [Tailwind Fluid](https://fluid.tw/)
-  - Default colors replaced with OKLCH via [tints.dev](https://www.tints.dev/)
+  - Default colors enhanced via [tints.dev](https://www.tints.dev/)
   - [Support variable font settings](https://gist.github.com/annedorko/340c00ab7c5844a47c782b005fdba872)
 - [Mona Sans variable font](https://github.com/github/mona-sans)
   - Opinionated font-specific typography classes via @apply
