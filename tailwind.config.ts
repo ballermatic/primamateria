@@ -26,6 +26,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
+        serif: ['var(--font-serif)'],
       },
       fontSize: {
         xxs: '0.625rem',

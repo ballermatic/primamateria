@@ -1,13 +1,19 @@
-import Footer from '@/components/footer';
-import '@/styles/styles.css';
-
 import type { Metadata } from 'next';
+import Footer from '@/components/footer';
+import { Bitter } from 'next/font/google';
 import localFont from 'next/font/local';
+import '@/styles/styles.css';
 
 const fontSans = localFont({
   src: '../fonts/MonaSans-variable.woff2',
   display: 'swap',
   variable: '--font-sans',
+});
+
+const fontSerif = Bitter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-serif',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${fontSans.variable} text-smoke`}>
+      <body className={`${fontSans.variable} ${fontSerif.variable} text-smoke`}>
         {children}
         <Footer />
       </body>
