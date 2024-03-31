@@ -1,10 +1,8 @@
-![EldritchFoundation Logo](https://github.com/ballermatic/eldritchfoundation/blob/main/public/gh-art/eldritchfoundation.webp)
+# Prima Materia
 
-# Eldritch Foundation
+In alchemy and philosophy, prima materia, materia prima or first matter (for a philosophical exposition refer to: Prime Matter), is the ubiquitous starting material required for the alchemical magnum opus and the creation of the philosopher's stone. It is the primitive formless base of all matter similar to chaos, the quintessence or aether. Esoteric alchemists describe the prima materia using simile, and compare it to concepts like the anima mundi.
 
-In the stygian depths, arcane scripts and eldritch styles twist reality, forging presences whispering unspeakable truths. Unseen forces of code weave a tapestry beyond mortal comprehension, a template drawn from the shadows of technology's most mysterious realms.
-
-## Arcanum Mechanica: The Unearthly Conduits of Creation
+## A rudimentary Nextjs starter
 
 - Next.js TypeScript
 - ESLint + Prettier
