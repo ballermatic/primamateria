@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+
+const graphic = '';
 
 export const metadata: Metadata = {
   title: 'Sandbox',
@@ -21,9 +24,39 @@ export default function SandboxPage() {
           Massive <span className='text-white font-bold font-narrow'>promotional</span> headlines
         </p>
       </div>
-      <div className='flex flex-grow min-h-[50dvh] items-center bg-gradient-to-b from-pucker-500 to-pink-500 ~p-8/16 border-eden-500 border-b-[6rem]'>
-        <p className='text-ticonderoga-500 exa'>Excitement Awaits</p>
-        <div className='ml-12 w-72 h-72 bg-ticonderoga-500 rounded-full'></div>
+
+      <div className='flex flex-grow min-h-[50dvh] items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
+        <p className='text-ticonderoga-500 exa'>
+          Luck favors the bold, <span className='italic font-light font-serif'>darling</span>
+        </p>
+        <div className='ml-12 w-72 h-72 bg-ticonderoga-500 rounded-full flex flex-col items-center justify-center text-center shadow-xl shadow-pucker-800'>
+          <p className='font-bold text-pucker-700 text-2xl leading-tight tracking-tight'>
+            Edna Mode
+            <br />
+            <span className='font-light text-xl'>No Capes!</span>
+          </p>
+        </div>
+      </div>
+
+      <div className='flex flex-1 ~gap-16/24 justify-between items-center min-h-[50dvh] ~p-8/16 ~mx-12/24 border-ticonderoga-500 border-x-8 bg-ticonderoga-50'>
+        <div>
+          <p className='font-serif font-light text-5xl tracking-tight'>Constructive authority</p>
+          <p className='font-light text-2xl mt-3 ml-1'>
+            established through{' '}
+            <span className='font-medium border-b-2 border-ticonderoga-500'>nuance</span> &amp;{' '}
+            <span className='font-medium border-b-2 border-ticonderoga-500'>clarity</span>.
+          </p>
+        </div>
+        <div
+          className='flex flex-grow items-center justify-center
+        '>
+          <Image
+            src='../../../thingy.svg'
+            alt='A thingy'
+            width={300}
+            height={85}
+          />
+        </div>
       </div>
     </main>
   );
