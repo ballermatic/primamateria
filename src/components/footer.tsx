@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Logo from './logo';
 
 export default function Footer() {
   return (
@@ -7,15 +7,8 @@ export default function Footer() {
       <Link
         href='/'
         className='flex flex-1 gap-2 items-center font-medium'>
-        <Image
-          className='relative'
-          src='/gh-art/eldritchfoundation.webp'
-          alt='HP Lovecraft loves this logo'
-          width={80}
-          height={80}
-          priority
-        />
-        <p>Eldritch</p>
+        <Logo />
+        <p>Brandname</p>
       </Link>
       <Link
         href='/privacy'

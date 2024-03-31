@@ -1,26 +1,18 @@
-import Image from 'next/image';
+import Logo from '@/components/logo';
 
 export default function HomePage() {
   return (
     <main className='flex flex-col items-center min-h-screen gap-12 p-12'>
-      <div className='relative z-10 flex place-items-center'>
-        <Image
-          className='relative'
-          src='/gh-art/eldritchfoundation.webp'
-          alt='HP Lovecraft loves this logo'
-          width={300}
-          height={300}
-          priority
-        />
-      </div>
-      <div className='max-w-lg text-center'>
-        <h1 className='giga mb-6'>Eldritch Foundation</h1>
+      <div className='flex flex-col items-center max-w-lg text-center'>
+        <Logo className='size-16' />
+        <h1 className='giga my-6'>Prima Materia</h1>
         <div className='lede'>
           <p>
-            In the stygian depths, arcane scripts and eldritch styles twist reality, forging
-            presences whispering unspeakable truths. Unseen forces of code weave a tapestry beyond
-            mortal comprehension, a template drawn from the shadows of technology’s most mysterious
-            realms.
+            In alchemy and philosophy, prima materia, materia prima or first matter, is the
+            ubiquitous starting material required for the alchemical magnum opus and the creation of
+            the philosopher’s stone. It is the primitive formless base of all matter similar to
+            chaos, the quintessence or aether. Esoteric alchemists describe the prima materia using
+            simile, and compare it to concepts like the anima mundi.
           </p>
         </div>
       </div>
