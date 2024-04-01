@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
-import Footer from '@/components/footer';
 import { Bitter } from 'next/font/google';
 import localFont from 'next/font/local';
 import '@/styles/styles.css';
+
+import Footer from '@/components/footer';
+import Navigation from '@/components/navigation';
 
 const fontSans = localFont({
   src: '../fonts/MonaSans-variable.woff2',
@@ -31,6 +33,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${fontSans.variable} ${fontSerif.variable} text-smoke flex flex-col min-h-dvh`}>
+        <Navigation />
         {children}
         <Footer />
       </body>
