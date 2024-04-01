@@ -17,9 +17,9 @@ const fontSerif = Bitter({
 });
 
 export const metadata: Metadata = {
-  title: 'Eldritch Foundation',
+  title: 'Prima Materia',
   description:
-    'In the stygian depths, arcane scripts and eldritch styles twist reality, forging presences whispering unspeakable truths. Unseen forces of code weave a tapestry beyond mortal comprehension, a template drawn from the shadows of technology’s most mysterious realms.',
+    'In alchemy, prima materia, materia prima, or first matter, is the ubiquitous starting material required for the alchemical magnum opus and the creation of the philosopher’s stone.',
 };
 
 export default function RootLayout({

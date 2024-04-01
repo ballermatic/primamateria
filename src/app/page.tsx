@@ -1,4 +1,5 @@
 import Logo from '@/components/logo';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -26,9 +27,8 @@ export default function HomePage() {
             &#9654;
           </span>
         </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-70`}>
-          Descend into the chromatic abyss, where hues unspeakable and tints unknowable converge in
-          a spectral dance.
+        <p className='m-0 max-w-[30ch] text-sm opacity-70'>
+          Default colors enhanced via tints.dev.
         </p>
       </a>
 
@@ -41,11 +41,21 @@ export default function HomePage() {
             &#9654;
           </span>
         </h2>
-        <p className={`m-0 max-w-[30ch] text-sm opacity-70`}>
-          Delve into a realm of forbidden scripts and unholy kernings, where typefaces writhe in the
-          shadows of ancient texts, each glyph poised to touch the very essence of unspoken
-          mysteries.
+        <p className='m-0 max-w-[30ch] text-sm opacity-70'>
+          Opinionated font-specific typography classes via @apply
         </p>
+      </a>
+
+      <a
+        href='/sandbox'
+        className='group rounded-sm border border-gray-400 hover:border-smoke px-5 p-6'>
+        <h2 className='caps font-medium mb-3'>
+          Sandbox{' '}
+          <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
+            &#9654;
+          </span>
+        </h2>
+        <p className='m-0 max-w-[30ch] text-sm opacity-70'>Playing with typography and color</p>
       </a>
     </main>
   );

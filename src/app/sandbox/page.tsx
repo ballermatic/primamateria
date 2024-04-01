@@ -5,7 +5,7 @@ const graphic = '';
 
 export const metadata: Metadata = {
   title: 'Sandbox',
-  description: '',
+  description: 'Just playing around... in the sand.',
 };
 
 const stylesThing1 = {};
@@ -40,8 +40,8 @@ export default function SandboxPage() {
 
       <div className='flex flex-1 ~gap-16/24 justify-between items-center min-h-[50dvh] ~p-8/16 ~mx-12/24 border-ticonderoga-500 border-x-8 bg-ticonderoga-50'>
         <div>
-          <p className='font-serif font-light text-5xl tracking-tight'>Constructive authority</p>
-          <p className='font-light text-2xl mt-3 ml-1'>
+          <p className='font-serif font-light text-4xl tracking-tight'>Constructive authority</p>
+          <p className='font-light text-xl mt-3 ml-1'>
             established through{' '}
             <span className='font-medium border-b-2 border-ticonderoga-500'>nuance</span> &amp;{' '}
             <span className='font-medium border-b-2 border-ticonderoga-500'>clarity</span>.
