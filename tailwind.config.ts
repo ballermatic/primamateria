@@ -32,7 +32,7 @@ const config: Config = {
         xxs: '0.625rem',
       },
       colors: {
-        white: '#fff',
+        white: 'oklch(98.73% 0.004 106.47 / <alpha-value>)',
         smoke: 'oklch(18.26% 0.002 286.2 / <alpha-value>)',
         bluebird: {
           '50': 'oklch(97.77% 0.008 225.08 / <alpha-value>)',
