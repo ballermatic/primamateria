@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function TypographyPage() {
   return (
-    <main className='container mx-auto flex min-h-screen flex-col ~p-3/8 mb-12'>
+    <main className='container mx-auto flex flex-col ~p-3/8 mb-12'>
       <h1 className='giga pb-12'>Typography</h1>
       <p className='mt-8 pb-2 border-b-2 border-smoke font-bold'>Headings</p>
       <div className='pt-12'>

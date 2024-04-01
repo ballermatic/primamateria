@@ -3,7 +3,7 @@ import Logo from './logo';
 
 export default function Footer() {
   return (
-    <footer className='p-2 border-t border-smoke flex flex-1 gap-4 items-center'>
+    <footer className='p-2 mt-auto border-t border-smoke flex gap-4 items-center'>
       <Link
         href='/'
         className='flex flex-1 gap-2 items-center font-medium'>
@@ -12,12 +12,12 @@ export default function Footer() {
       </Link>
       <Link
         href='/privacy'
-        className='hover:underline'>
+        className='hover:underline text-sm'>
         Privacy
       </Link>
       <Link
         href='/privacy/cookies'
-        className='hover:underline'>
+        className='hover:underline text-sm'>
         Cookies
       </Link>
     </footer>
