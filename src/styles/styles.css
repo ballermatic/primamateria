@@ -51,7 +51,7 @@
     @apply ~text-2xl/5xl;
     @apply text-balance;
     font-weight: 484;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     line-height: 1.125;
   }
   .mega {

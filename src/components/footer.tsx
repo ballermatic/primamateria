@@ -12,12 +12,12 @@ export default function Footer() {
       </Link>
       <Link
         href='/privacy'
-        className='hover:underline text-sm'>
+        className='hover:underline hover:text-blue-500 text-sm'>
         Privacy
       </Link>
       <Link
         href='/privacy/cookies'
-        className='hover:underline text-sm'>
+        className='hover:underline hover:text-blue-500 text-sm'>
         Cookies
       </Link>
     </footer>
