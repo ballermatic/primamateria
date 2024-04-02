@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function TypographySerifPage() {
   return (
-    <main className='container mx-auto flex flex-col ~p-3/8 mb-12'>
-      <h1 className='giga pb-12 flex justify-between font-serif'>
+    <main className='container mx-auto mb-12 flex flex-col ~p-3/8'>
+      <h1 className='giga flex justify-between pb-12 font-serif'>
         Typography: Bitter
         <Link
           href='/typography'
@@ -18,44 +18,44 @@ export default function TypographySerifPage() {
         </Link>
       </h1>
       <div className='font-serif'>
-        <p className='mt-8 pb-2 border-b-2 border-smoke font-bold'>Headings</p>
+        <p className='mt-8 border-b-2 border-smoke pb-2 font-bold'>Headings</p>
         <div className='pt-12'>
           <p className='exa'>Wandering Quails Deploy Eucalyptus Photons</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> exa
           </p>
         </div>
         <div className='pt-12'>
           <p className='peta'>Burgeoning Mythical Xylophones Glisten</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> peta
           </p>
         </div>
         <div className='pt-12'>
           <p className='tera'>Kingly Sparrows Fly the Evening Plains</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> tera
           </p>
         </div>
         <div className='pt-12'>
           <p className='giga'>Brisk ferns envelop damp pathways</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> giga
           </p>
         </div>
         <div className='pt-12'>
           <p className='mega'>Gargantuan whelks explore neptunian depths</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> mega
           </p>
         </div>
         <div className='pt-12'>
           <p className='kilo'>Vibrant, quirky jackals roam zeniths, eclipsing moonlit fjords</p>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> kilo
           </p>
         </div>
-        <p className='mt-24 pb-2 border-b-2 border-smoke font-bold'>Body Text</p>
+        <p className='mt-24 border-b-2 border-smoke pb-2 font-bold'>Body Text</p>
         <div className='pt-12'>
           <div className='lede'>
             <p>
@@ -68,7 +68,7 @@ export default function TypographySerifPage() {
               the enchanted forest.
             </p>
           </div>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> lede
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function TypographySerifPage() {
               glass facades of towering skyscrapers.
             </p>
           </div>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> narrative
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function TypographySerifPage() {
               glass facades of towering skyscrapers.
             </p>
           </div>
-          <p className='mt-6 pt-2 border-t border-gray-300 tracking-wide'>
+          <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
             <span className='nano caps text-gray-500'>classname:</span> caption
           </p>
         </div>

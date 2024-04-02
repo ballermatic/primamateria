@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${fontSans.variable} ${fontSerif.variable} bg-white text-smoke flex flex-col min-h-dvh`}>
+        className={`${fontSans.variable} ${fontSerif.variable} flex min-h-dvh flex-col bg-white text-smoke`}>
         <Navigation />
         {children}
         <Footer />

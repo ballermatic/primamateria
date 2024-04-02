@@ -5,7 +5,7 @@ import Logo from '@/components/logo';
 export default function HomePage() {
   return (
     <main className='flex flex-col items-center p-12'>
-      <div className='flex flex-col items-center max-w-lg text-center'>
+      <div className='flex max-w-lg flex-col items-center text-center'>
         <Logo className='size-16' />
         <h1 className='giga my-6'>Prima Materia</h1>
         <div className='lede'>
@@ -18,11 +18,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className='flex md:flex-row flex-col ~gap-4/8 my-12'>
+      <div className='my-12 flex flex-col ~gap-4/8 md:flex-row'>
         <Link
           href='/colors'
-          className='group rounded-sm border border-gray-400 hover:border-smoke px-5 p-6'>
-          <h2 className='caps font-medium mb-3'>
+          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
+          <h2 className='caps mb-3 font-medium'>
             Colors{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
@@ -35,8 +35,8 @@ export default function HomePage() {
 
         <Link
           href='/typography'
-          className='group rounded-sm border border-gray-400 hover:border-smoke px-5 p-6'>
-          <h2 className='caps font-medium mb-3'>
+          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
+          <h2 className='caps mb-3 font-medium'>
             Typography{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
@@ -49,8 +49,8 @@ export default function HomePage() {
 
         <Link
           href='/sandbox'
-          className='group rounded-sm border border-gray-400 hover:border-smoke px-5 p-6'>
-          <h2 className='caps font-medium mb-3'>
+          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
+          <h2 className='caps mb-3 font-medium'>
             Sandbox{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;

@@ -17,38 +17,38 @@ export default function SandboxPage() {
         <h1 className='giga ~p-3/8'>Sandbox</h1>
       </div>
 
-      <div className='flex flex-grow min-h-[50dvh] items-center bg-gradient-to-br from-bluebird-500 to-cobalt-500 ~p-8/16'>
+      <div className='flex min-h-[50dvh] grow items-center bg-gradient-to-br from-bluebird-500 to-cobalt-500 ~p-8/16'>
         <p
           style={stylesThing1}
-          className='~text-[6.4rem]/[16rem] font-black font-narrow uppercase from-ticonderoga-500 to-yellow-300 bg-gradient-to-br bg-clip-text text-transparent tracking-tight leading-[0.8em] -skew-y-6 -skew-x-12 ~pb-8/16 ~ps-8/16'>
-          Massive <span className='text-white font-bold font-narrow'>promotional</span> headlines
+          className='-skew-x-12 -skew-y-6 bg-gradient-to-br from-ticonderoga-500 to-yellow-300 bg-clip-text font-black uppercase leading-[0.8em] tracking-tight text-transparent ~ps-8/16 ~pb-8/16 ~text-[6.4rem]/[16rem] font-narrow'>
+          Massive <span className='font-bold text-white font-narrow'>promotional</span> headlines
         </p>
       </div>
 
-      <div className='flex flex-grow min-h-[50dvh] items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
-        <p className='text-ticonderoga-500 exa'>
-          Luck favors the bold, <span className='italic font-light font-serif'>darling</span>
+      <div className='flex min-h-[50dvh] grow items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
+        <p className='exa text-ticonderoga-500'>
+          Luck favors the bold, <span className='font-serif font-light italic'>darling</span>
         </p>
-        <div className='ml-12 w-72 h-72 bg-ticonderoga-500 rounded-full flex flex-col items-center justify-center text-center shadow-xl shadow-pucker-800'>
-          <p className='font-bold text-pucker-700 text-2xl leading-tight tracking-tight'>
+        <div className='ml-12 flex size-72 flex-col items-center justify-center rounded-full bg-ticonderoga-500 text-center shadow-xl shadow-pucker-800'>
+          <p className='text-2xl font-bold leading-tight tracking-tight text-pucker-700'>
             Edna Mode
             <br />
-            <span className='font-light text-xl'>No Capes!</span>
+            <span className='text-xl font-light'>No Capes!</span>
           </p>
         </div>
       </div>
 
-      <div className='flex flex-1 ~gap-16/24 justify-between items-center min-h-[50dvh] ~p-8/16 ~mx-12/24 border-ticonderoga-500 border-x-8 bg-ticonderoga-50'>
+      <div className='flex min-h-[50dvh] flex-1 items-center justify-between border-x-8 border-ticonderoga-500 bg-ticonderoga-50 ~mx-12/24 ~gap-16/24 ~p-8/16'>
         <div>
-          <p className='font-serif font-light text-4xl tracking-tight'>Constructive authority</p>
-          <p className='font-light text-xl mt-3 ml-1'>
+          <p className='font-serif text-4xl font-light tracking-tight'>Constructive authority</p>
+          <p className='ml-1 mt-3 text-xl font-light'>
             established through{' '}
-            <span className='font-medium border-b-2 border-ticonderoga-500'>nuance</span> &amp;{' '}
-            <span className='font-medium border-b-2 border-ticonderoga-500'>clarity</span>.
+            <span className='border-b-2 border-ticonderoga-500 font-medium'>nuance</span> &amp;{' '}
+            <span className='border-b-2 border-ticonderoga-500 font-medium'>clarity</span>.
           </p>
         </div>
         <div
-          className='flex flex-grow items-center justify-center
+          className='flex grow items-center justify-center
         '>
           <Image
             src='../../../thingy.svg'
