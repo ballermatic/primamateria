@@ -13,8 +13,8 @@ export default function TypographySerifPage() {
         Typography: Bitter
         <Link
           href='/typography'
-          className='font-sans hover:text-blue-500 hover:underline'>
-          Sans
+          className='font-sans text-gray-400 hover:text-blue-500 hover:underline'>
+          Sans »
         </Link>
       </h1>
       <div className='font-serif'>

@@ -13,8 +13,8 @@ export default function TypographyPage() {
         Typography: Mona Sans
         <Link
           href='/typography/serif'
-          className='font-serif hover:text-blue-500 hover:underline'>
-          Serif
+          className='font-serif font-normal text-gray-400 hover:text-blue-500 hover:underline'>
+          Serif »
         </Link>
       </h1>
       <p className='mt-8 border-b-2 border-smoke pb-2 font-bold'>Headings</p>
