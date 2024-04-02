@@ -29,7 +29,7 @@ export default function SandboxPage() {
         <p className='exa text-ticonderoga-500'>
           Luck favors the bold, <span className='font-serif font-light italic'>darling</span>
         </p>
-        <div className='ml-12 flex size-72 flex-col items-center justify-center rounded-full bg-ticonderoga-500 text-center shadow-xl shadow-pucker-800'>
+        <div className='ml-12 flex size-72 flex-col items-center justify-center rounded-full rounded-tr-none bg-ticonderoga-500 text-center shadow-xl shadow-pucker-800'>
           <p className='text-2xl font-bold leading-tight tracking-tight text-pucker-700'>
             Edna Mode
             <br />

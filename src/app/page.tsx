@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main className='flex flex-col items-center p-12'>
       <div className='flex max-w-lg flex-col items-center text-center'>
-        <Logo className='size-16' />
+        <Logo className='size-36 my-12' />
         <h1 className='giga my-6'>Prima Materia</h1>
         <div className='lede'>
           <p>
