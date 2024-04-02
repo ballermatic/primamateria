@@ -1,7 +1,11 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+};
 
 const bundleAnalyzerConfig = {
   enabled: process.env.ANALYZE === 'true',
