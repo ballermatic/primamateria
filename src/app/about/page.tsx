@@ -7,8 +7,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className='container mx-auto flex flex-col ~p-3/8'>
-      <h1 className='giga pb-12'>About</h1>
+    <main className='flex flex-col'>
+      <div className='border-b border-smoke'>
+        <h1 className='giga ~p-3/8'>About</h1>
+      </div>
     </main>
   );
 }
