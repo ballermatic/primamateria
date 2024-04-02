@@ -12,12 +12,12 @@ const stylesThing1 = {};
 
 export default function SandboxPage() {
   return (
-    <main className='flex flex-col'>
+    <main className='flex flex-col overflow-hidden -z-50'>
       <div className='border-b border-smoke'>
         <h1 className='giga ~p-3/8'>Sandbox</h1>
       </div>
 
-      <div className='flex min-h-[50dvh] grow items-center bg-gradient-to-br from-bluebird-500 to-cobalt-500 ~p-8/16'>
+      <div className='flex grow items-center bg-gradient-to-br from-bluebird-500 to-cobalt-500 ~p-8/16'>
         <p
           style={stylesThing1}
           className='-skew-x-12 -skew-y-6 bg-gradient-to-br from-ticonderoga-500 to-yellow-300 bg-clip-text font-black uppercase leading-[0.8em] tracking-tight text-transparent ~ps-8/16 ~pb-8/16 ~text-[6.4rem]/[16rem] font-narrow'>
@@ -25,7 +25,7 @@ export default function SandboxPage() {
         </p>
       </div>
 
-      <div className='flex min-h-[50dvh] grow items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
+      <div className='flex grow items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
         <p className='exa text-ticonderoga-500'>
           Luck favors the bold, <span className='font-serif font-light italic'>darling</span>
         </p>
@@ -38,7 +38,7 @@ export default function SandboxPage() {
         </div>
       </div>
 
-      <div className='flex min-h-[50dvh] flex-1 items-center justify-between border-x-8 border-ticonderoga-500 bg-ticonderoga-50 ~mx-12/24 ~gap-16/24 ~p-8/16'>
+      <div className='flex flex-1 items-center justify-between border-x-8 border-ticonderoga-500 bg-ticonderoga-50 ~mx-12/24 ~gap-16/24 ~p-8/16'>
         <div>
           <p className='font-serif text-4xl font-light tracking-tight'>Constructive authority</p>
           <p className='ml-1 mt-3 text-xl font-light'>
