@@ -8,14 +8,38 @@ import { createContext, useContext, useEffect, useId, useRef, useState } from 'r
 
 import Logo from './logo';
 
-// Menu links object/array
+interface MenuItem {
+  linkText: string;
+  href: string;
+}
 
-function LargeMenu() {
+const menuPrimary: MenuItem[] = [
+  { linkText: 'About', href: '/about' },
+  { linkText: 'Colors', href: '/colors' },
+  { linkText: 'Sans Font', href: '/typography' },
+  { linkText: 'Serif Font', href: '/typography/serif' },
+  { linkText: 'Sandbox', href: '/sandbox' },
+];
+
+function LargeMenu({ menuPrimary }: { menuPrimary: MenuItem[] }) {
+  const pathname = usePathname();
+
   return (
-    <div className='flex flex-row ~gap-4/8'>
-      LargeMenu
-      {/* Loop through menu links */}
-      {/* <Link href={} className='p-2 hover:text-blue-500'>{}</Link> */}
+    <div className='flex flex-row ~gap-2/4'>
+      {menuPrimary.map((item, index) => {
+        const isCurrentPage = pathname === item.href;
+        return (
+          <Link
+            key={index}
+            href={item.href}
+            className={clsx('p-2', {
+              'hover:text-blue-500': !isCurrentPage,
+              'text-gray-400 pointer-events-none': isCurrentPage,
+            })}>
+            {item.linkText}
+          </Link>
+        );
+      })}
     </div>
   );
 }
@@ -31,7 +55,7 @@ export default function Navigation() {
             <Logo />
             <p>PrimaMateria</p>
           </Link>
-          <LargeMenu />
+          <LargeMenu menuPrimary={menuPrimary} />
         </div>
       </div>
       <div className='block md:hidden mb-16'>
