@@ -2,7 +2,7 @@
 
 In alchemy and philosophy, prima materia, materia prima or first matter (for a philosophical exposition refer to: Prime Matter), is the ubiquitous starting material required for the alchemical magnum opus and the creation of the philosopher's stone. It is the primitive formless base of all matter similar to chaos, the quintessence or aether. Esoteric alchemists describe the prima materia using simile, and compare it to concepts like the anima mundi.
 
-## A rudimentary Nextjs starter
+## Yet another Nextjs starter
 
 - Next.js TypeScript
 - ESLint + Prettier
@@ -10,7 +10,10 @@ In alchemy and philosophy, prima materia, materia prima or first matter (for a p
 - [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - [Tailwind CSS 3.4.x](https://tailwindcss.com/)
   - [Tailwind Fluid](https://fluid.tw/)
-  - Default colors enhanced via [tints.dev](https://www.tints.dev/)
-  - [Support variable font settings](https://gist.github.com/annedorko/340c00ab7c5844a47c782b005fdba872)
+  - Extra colors via [tints.dev](https://www.tints.dev/)
+  - [Support for variable font settings](https://gist.github.com/annedorko/340c00ab7c5844a47c782b005fdba872)
 - [Mona Sans variable font](https://github.com/github/mona-sans)
   - Opinionated font-specific typography classes via @apply
+- [Bitter](https://fonts.google.com/specimen/Bitter) serif font makes an excellent pairing with Mona Sans
+
+---
