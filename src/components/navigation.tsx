@@ -21,6 +21,9 @@ const menuPrimary: MenuItem[] = [
   { linkText: 'Sandbox', href: '/sandbox' },
 ];
 
+//
+// Large Menu -- above medium breakpoint
+//
 function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
   const pathname = usePathname();
 
@@ -44,6 +47,9 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
   );
 }
 
+//
+// Mobile Menu -- below medium breakpoint
+//
 function MenuSmall({
   menuPrimary,
   menuOpen,
@@ -99,6 +105,9 @@ function MenuSmall({
   );
 }
 
+//
+// Primary navigation menu -- toggle between separate components
+//
 export default function Navigation() {
   const [menuOpen, menuToggle] = useState(false);
 
@@ -110,12 +119,12 @@ export default function Navigation() {
   return (
     <>
       <div className='hidden md:block'>
-        <div className='flex flex-row items-center gap-4 border-b border-smoke p-2'>
-          <Link
-            href='/'
-            className='flex flex-1 items-center gap-2 font-medium'>
-            <Logo />
-            <p>PrimaMateria</p>
+        <div className='flex flex-row justify-between items-center gap-4 border-b border-smoke p-2'>
+          <Link href='/'>
+            <div className='flex items-center gap-2 font-medium'>
+              <Logo />
+              <p>PrimaMateria</p>
+            </div>
           </Link>
           <MenuLarge menuPrimary={menuPrimary} />
         </div>
