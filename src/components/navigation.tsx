@@ -48,21 +48,21 @@ export default function Navigation() {
   return (
     <>
       <div className='hidden md:block'>
-        <div className='flex flex-row gap-4 items-center p-2 border-smoke border-b'>
+        <div className='flex flex-row items-center gap-4 border-b border-smoke p-2'>
           <Link
             href='/'
-            className='flex flex-1 gap-2 items-center font-medium'>
+            className='flex flex-1 items-center gap-2 font-medium'>
             <Logo />
             <p>PrimaMateria</p>
           </Link>
           <LargeMenu menuPrimary={menuPrimary} />
         </div>
       </div>
-      <div className='block md:hidden mb-16'>
-        <div className='flex flex-row justify-between items-center fixed w-full bg-white/80'>
+      <div className='mb-16 block md:hidden'>
+        <div className='fixed flex w-full flex-row items-center justify-between bg-white/80'>
           <Link
             href='/'
-            className='flex flex-1 p-2 items-center font-medium'>
+            className='flex flex-1 items-center p-2 font-medium'>
             <Logo />
           </Link>
           <Hamburger size={24} />
