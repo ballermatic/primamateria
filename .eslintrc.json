@@ -4,7 +4,7 @@
   "rules": {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "tailwindcss/no-custom-classname": "disabled"
+    "tailwindcss/no-custom-classname": 0
   },
   "parserOptions": {
     "sourceType": "module",
