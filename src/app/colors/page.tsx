@@ -1,6 +1,7 @@
+import type { Metadata } from 'next';
+
 import ColorCard from './ColorCard';
 import colorsData from './colors.json';
-import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Colors',

@@ -1,7 +1,8 @@
+import '@/styles/styles.css';
+
 import type { Metadata } from 'next';
 import { Bitter } from 'next/font/google';
 import localFont from 'next/font/local';
-import '@/styles/styles.css';
 
 import Footer from '@/components/footer';
 import Navigation from '@/components/navigation';

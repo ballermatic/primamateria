@@ -1,12 +1,24 @@
 'use client';
 
-import { createContext, useContext, useEffect, useId, useRef, useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import { Squash as Hamburger } from 'hamburger-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { createContext, useContext, useEffect, useId, useRef, useState } from 'react';
 
 import Logo from './logo';
+
+// Menu links object/array
+
+function LargeMenu() {
+  return (
+    <div className='flex flex-row ~gap-4/8'>
+      LargeMenu
+      {/* Loop through menu links */}
+      {/* <Link href={} className='p-2 hover:text-blue-500'>{}</Link> */}
+    </div>
+  );
+}
 
 export default function Navigation() {
   return (
@@ -19,7 +31,7 @@ export default function Navigation() {
             <Logo />
             <p>PrimaMateria</p>
           </Link>
-          <div>Menu links here</div>
+          <LargeMenu />
         </div>
       </div>
       <div className='block md:hidden mb-16'>
