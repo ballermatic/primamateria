@@ -7,7 +7,7 @@ export default function HomePage() {
     <main className='container mx-auto flex flex-col items-center p-12 '>
       <div className='flex max-w-lg flex-col items-center text-center'>
         <Mark className='my-12 size-64' />
-        <h1 className='giga my-6'>Prima Materia</h1>
+        <h1 className='text-6xl font-serif tracking-tight my-6'>Prima Materia</h1>
         <div className='lede'>
           <p>
             In alchemy and philosophy, prima materia, materia prima or first matter, is the
@@ -21,42 +21,44 @@ export default function HomePage() {
       <div className='my-12 flex flex-col w-full ~gap-4/8 md:flex-row'>
         <Link
           href='/colors'
-          className='group grow rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-300'>
           <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Colors{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
             </span>
           </h2>
-          <p className='m-0 max-w-[30ch] text-sm opacity-70'>
+          <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
             Default colors enhanced via tints.dev.
           </p>
         </Link>
 
         <Link
           href='/typography'
-          className='group grow rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-300'>
           <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Typography{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
             </span>
           </h2>
-          <p className='m-0 max-w-[30ch] text-sm opacity-70'>
+          <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
             Opinionated font-specific typography classes via @apply
           </p>
         </Link>
 
         <Link
           href='/sandbox'
-          className='group grow rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-300'>
           <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Sandbox{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
             </span>
           </h2>
-          <p className='m-0 max-w-[30ch] text-sm opacity-70'>Playing with typography and color</p>
+          <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
+            Playing with typography and color
+          </p>
         </Link>
       </div>
 
