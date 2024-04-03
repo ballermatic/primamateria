@@ -10,10 +10,13 @@ In alchemy and philosophy, prima materia, materia prima or first matter (for a p
 - [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
 - [Tailwind CSS 3.4.x](https://tailwindcss.com/)
   - [Tailwind Fluid](https://fluid.tw/)
-  - Extra colors via [tints.dev](https://www.tints.dev/)
+  - More colors via [tints.dev](https://www.tints.dev/)
   - [Support for variable font settings](https://gist.github.com/annedorko/340c00ab7c5844a47c782b005fdba872)
-- [Mona Sans variable font](https://github.com/github/mona-sans)
-  - Opinionated font-specific typography classes via @apply
-- [Bitter](https://fonts.google.com/specimen/Bitter) serif font makes an excellent pairing with Mona Sans
+- Opinionated default headings typography classes via @apply
+  - Exa, Peta, Tera, Giga ... Nano, etc
+- Webfonts, both local and Google
+  - [Mona Sans](https://github.com/github/mona-sans) variable sans serif font
+  - [Bitter](https://fonts.google.com/specimen/Bitter) serif font makes an excellent pairing with Mona Sans
+  - [Monaspace](https://github.com/githubnext/monaspace) mono font superfamily, in this case, Argon at 300 weight
 
 ---
