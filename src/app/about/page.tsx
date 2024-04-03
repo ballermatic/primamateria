@@ -7,9 +7,32 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className='flex flex-col my-12'>
-      <div className='border-b border-smoke'>
-        <h1 className='giga ~p-3/8'>About</h1>
+    <main className='container mx-auto flex flex-col my-12'>
+      <div className=' ~pt-3/8 pb-12'>
+        <h1 className='giga mb-3 w-1/2'>Welcome to the mysterious realm of PrimaMateria</h1>
+        <p className='nano caps text-gray-400'>Corporate doublespeak courtesy of Chat GPT 3.5</p>
+      </div>
+      <div className='narrative flex flex-col ~gap-3/8 mb-12'>
+        <p className='w-1/2 border-s-2 ps-6 py-2 border-smoke'>
+          Arcane forces of the universe converge to create the extraordinary from the ordinary with
+          PrimaMateria. Our elixirs are forged from the primal essences of ancient elements,
+          blending shadow with light, chaos with order, in a delicate dance of alchemical mastery.
+          Each potion is a whisper from the depths of time, a reminder of the power that lies
+          dormant within every substance.
+        </p>
+        <p className='w-1/2 border-s-2 ps-6 py-2 border-smoke self-center'>
+          PrimaMateria beckons you to explore the alchemical mysteries that lie beyond the veil of
+          the mundane. Our elixirs are not mere concoctions; they are gateways to realms unseen,
+          keys to unlocking the hidden potential of the cosmos. Whether you seek to transmute the
+          fabric of reality or simply yearn for a glimpse into the unknown, PrimaMateria offers a
+          glimpse into the boundless possibilities of existence.
+        </p>
+        <p className='w-1/2 border-s-2 ps-6 py-2 border-smoke self-end'>
+          Embark on a journey through the enigmatic realms of PrimaMateria, where the line between
+          science and sorcery blurs, and the boundaries of possibility are but illusions. Embrace
+          the shadows of the unknown and harness the power of the arcane with PrimaMateria, the
+          harbinger of transformation in a world of endless wonders.
+        </p>
       </div>
     </main>
   );
