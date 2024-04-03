@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function TypographyPage() {
   return (
-    <main className='container mx-auto mb-12 flex flex-col ~p-3/8'>
+    <main className='container mx-auto my-12 flex flex-col ~p-3/8'>
       <h1 className='giga flex justify-between pb-12'>
         Typography: Mona Sans
         <Link

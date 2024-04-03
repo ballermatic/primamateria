@@ -13,7 +13,7 @@ export default function ColorsPage() {
   const { colors } = colorsData;
 
   return (
-    <main className='container mx-auto mb-12 flex flex-col ~p-3/8'>
+    <main className='container mx-auto my-12 flex flex-col ~p-3/8'>
       <h1 className='giga pb-12'>Color Selects</h1>
       {Object.entries(colors).map(([colorName, colorShades]) => (
         <div key={colorName}>

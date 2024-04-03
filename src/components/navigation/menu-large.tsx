@@ -20,8 +20,8 @@ export default function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) 
           <Link
             key={index}
             href={item.href}
-            className={clsx('p-2', {
-              'hover:text-blue-500': !isCurrentPage,
+            className={clsx('p-2 border-b-2 border-transparent mt-1', {
+              'hover:text-blue-500 hover:border-blue-500 hover:border-b-2': !isCurrentPage,
               'text-gray-400 pointer-events-none': isCurrentPage,
             })}>
             {item.linkText}

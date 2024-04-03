@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <main className='flex flex-col items-center p-12'>
       <div className='flex max-w-lg flex-col items-center text-center'>
-        <Logo className='my-12 size-36' />
+        <Logo className='my-12 size-64' />
         <h1 className='giga my-6'>Prima Materia</h1>
         <div className='lede'>
           <p>
@@ -21,8 +21,8 @@ export default function HomePage() {
       <div className='my-12 flex flex-col ~gap-4/8 md:flex-row'>
         <Link
           href='/colors'
-          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
-          <h2 className='caps mb-3 font-medium'>
+          className='group rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Colors{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
@@ -35,8 +35,8 @@ export default function HomePage() {
 
         <Link
           href='/typography'
-          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
-          <h2 className='caps mb-3 font-medium'>
+          className='group rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Typography{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
@@ -49,8 +49,8 @@ export default function HomePage() {
 
         <Link
           href='/sandbox'
-          className='group rounded-sm border border-gray-400 p-6 px-5 hover:border-smoke'>
-          <h2 className='caps mb-3 font-medium'>
+          className='group rounded-sm border border-smoke p-6 px-5 hover:border-blue-500 hover:bg-blue-100'>
+          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
             Sandbox{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               &#9654;
