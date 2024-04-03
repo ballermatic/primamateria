@@ -5,7 +5,7 @@ import { Squash as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import Logo from '../logo';
+import Logo from '../logo/logo-mark';
 
 interface MenuItem {
   linkText: string;

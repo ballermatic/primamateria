@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-import Logo from '@/components/logo';
+import Mark from '@/components/logo/logo-mark';
 
 export default function HomePage() {
   return (
     <main className='flex flex-col items-center p-12'>
       <div className='flex max-w-lg flex-col items-center text-center'>
-        <Logo className='my-12 size-64' />
+        <Mark className='my-12 size-64' />
         <h1 className='giga my-6'>Prima Materia</h1>
         <div className='lede'>
           <p>

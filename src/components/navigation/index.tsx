@@ -33,12 +33,7 @@ export default function Navigation() {
     <>
       <div className='hidden md:block'>
         <div className='flex flex-row justify-between items-center gap-4 border-b border-smoke'>
-          <Link href='/'>
-            <div className='flex items-center gap-2 font-medium p-2'>
-              <Logo />
-              <p>PrimaMateria</p>
-            </div>
-          </Link>
+          <Logo />
           <MenuLarge menuPrimary={menuPrimary} />
         </div>
       </div>
