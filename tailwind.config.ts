@@ -33,6 +33,12 @@ const config: Config = {
       fontSize: {
         xxs: '0.625rem',
       },
+      letterSpacing: {
+        tightest: '-0.05em',
+        tighter: '-0.033em',
+        tight: '-0.02em',
+        tightish: '-0.01em',
+      },
       colors: {
         white: 'oklch(98.73% 0.004 106.47 / <alpha-value>)',
         smoke: 'oklch(18.26% 0.002 286.2 / <alpha-value>)',
@@ -194,13 +200,7 @@ const config: Config = {
         },
       },
     },
-    // Overrides
-    letterSpacing: {
-      tightest: '-0.05em',
-      tighter: '-0.033em',
-      tight: '-0.02em',
-      tightish: '-0.01em',
-    },
+    // Overrides here if any
   },
   plugins: [fluidCorePlugins, fontVariarionSettingsPlugin],
   safelist: safelist, // remove if not using the colors page
