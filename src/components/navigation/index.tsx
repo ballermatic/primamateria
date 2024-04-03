@@ -4,9 +4,9 @@ import { Squash as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
+import Logo from '../logo';
 import MenuLarge from './menu-large';
 import MenuSmall from './menu-small';
-import Logo from '../logo';
 
 interface MenuItem {
   linkText: string;

@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 type ButtonProps = {
   invert?: boolean;
@@ -8,7 +8,7 @@ type ButtonProps = {
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
 );
 
-export function Button({ invert = false, className, children, ...props }: ButtonProps) {
+export default function Button({ invert = false, className, children, ...props }: ButtonProps) {
   className = clsx(
     className,
     'inline-flex rounded-full px-4 py-1.5 transition',
@@ -17,7 +17,7 @@ export function Button({ invert = false, className, children, ...props }: Button
       : 'bg-neutral-950 text-white hover:bg-neutral-800',
   );
 
-  let inner = <span className='relative top-px'>{children}</span>;
+  const inner = <span className='relative top-px'>{children}</span>;
 
   if (typeof props.href === 'undefined') {
     return (

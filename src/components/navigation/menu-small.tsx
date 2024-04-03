@@ -45,7 +45,7 @@ export default function MenuSmall({
           toggle={() => menuToggle(!menuOpen)}
         />
       </div>
-      <div className='flex flex-col ~gap-2/4 px-2'>
+      <div className='flex flex-col ~gap-2/4 px-2 items-center'>
         {menuPrimary.map((item, index) => {
           const isCurrentPage = pathname === item.href;
           return (
@@ -61,7 +61,11 @@ export default function MenuSmall({
             </Link>
           );
         })}
-        <p>Mobile menus are often different than those for larger screens</p>
+        <div className='mt-12'>
+          <p className='text-sm max-w-60 text-center'>
+            Mobile menus are often different than those for larger screens
+          </p>
+        </div>
       </div>
     </div>
   );
