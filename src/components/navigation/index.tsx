@@ -43,7 +43,7 @@ export default function Navigation() {
         </div>
       </div>
       <div className='mb-16 block md:hidden'>
-        <div className='fixed flex w-full flex-row items-center justify-between bg-white/80'>
+        <div className='fixed flex w-full flex-row items-center justify-between bg-white/70'>
           <Link
             href='/'
             className='flex flex-1 items-center p-2 font-medium'>

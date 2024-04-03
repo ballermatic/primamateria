@@ -79,7 +79,7 @@
     @apply max-w-prose;
     @apply hyphens-auto;
     @apply mb-3;
-    font-weight: 230;
+    font-weight: 260;
     font-stretch: 106%;
     line-height: 1.67;
   }
@@ -89,7 +89,7 @@
     @apply max-w-prose;
     @apply hyphens-auto;
     @apply mb-3;
-    font-weight: 266;
+    font-weight: 283;
     font-stretch: 103%;
     line-height: 1.67;
   }
