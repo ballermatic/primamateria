@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { Squash as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 import Logo from '../logo';
 

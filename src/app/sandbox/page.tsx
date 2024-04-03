@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
-const graphic = '';
-
 export const metadata: Metadata = {
   title: 'Sandbox',
   description: 'Just playing around... in the sand.',

@@ -10,7 +10,7 @@ interface ColorCardProps {
 export default function ColorCard({ colorName, colorShades }: ColorCardProps) {
   return (
     <div className='flex flex-wrap sm:flex-nowrap'>
-      {Object.entries(colorShades).map(([shade, _]) => (
+      {Object.entries(colorShades).map(([shade]) => (
         <div
           key={shade}
           className='flex-auto'>
