@@ -19,6 +19,12 @@ const fontSerif = Bitter({
   variable: '--font-serif',
 });
 
+const fontMono = localFont({
+  src: '../fonts/MonaspaceArgon-Light.woff',
+  display: 'swap',
+  variable: '--font-mono',
+});
+
 export const metadata: Metadata = {
   title: 'Prima Materia',
   description:
@@ -33,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${fontSans.variable} ${fontSerif.variable} flex min-h-dvh flex-col bg-white text-smoke`}>
+        className={`${fontSans.variable} ${fontSerif.variable}  ${fontMono.variable} flex min-h-dvh flex-col bg-white text-smoke`}>
         <Navigation />
         {children}
         <Footer />

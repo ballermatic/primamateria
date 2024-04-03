@@ -1,11 +1,12 @@
+import {
+  defaultThemeFontSizeInRems,
+  defaultThemeScreensInRems,
+  fluidCorePlugins,
+  fluidExtractor,
+} from 'fluid-tailwind';
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
-import {
-  fluidExtractor,
-  fluidCorePlugins,
-  defaultThemeScreensInRems,
-  defaultThemeFontSizeInRems,
-} from 'fluid-tailwind';
+
 import fontVariarionSettingsPlugin from './tailwind/fontVariationSettingsPlugin';
 import safelist from './tailwind/tailwindSafelist';
 
@@ -27,6 +28,7 @@ const config: Config = {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
         serif: ['var(--font-serif)'],
+        mono: ['var(--font-mono)'],
       },
       fontSize: {
         xxs: '0.625rem',
