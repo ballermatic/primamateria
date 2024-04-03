@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import Logo from '../logo';
+import LogoMark from '../logo/logo-mark';
 import MenuLarge from './menu-large';
 import MenuSmall from './menu-small';
 
@@ -16,9 +17,9 @@ interface MenuItem {
 const menuPrimary: MenuItem[] = [
   { linkText: 'About', href: '/about' },
   { linkText: 'Colors', href: '/colors' },
-  { linkText: 'Sans Font', href: '/typography' },
-  { linkText: 'Serif Font', href: '/typography/serif' },
+  { linkText: 'Typography', href: '/typography' },
   { linkText: 'Sandbox', href: '/sandbox' },
+  { linkText: 'Github', href: 'https://github.com/ballermatic/primamateria' },
 ];
 
 export default function Navigation() {
@@ -42,7 +43,7 @@ export default function Navigation() {
           <Link
             href='/'
             className='flex flex-1 items-center p-2 font-medium'>
-            <Logo />
+            <LogoMark />
           </Link>
           <Hamburger
             label='Show menu'

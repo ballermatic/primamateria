@@ -69,7 +69,7 @@ export default function HomePage() {
         </h2>
         <div className='flex flex-row bg-smoke text-white p-6 font-mono ~gap-4/8 md:flex-row'>
           <div className='w-1/2'>
-            <h3 className='uppercase text-acid-500'>Basics</h3>
+            <h3 className='uppercase'>Basics</h3>
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Next.js 14.1.x</li>
@@ -80,7 +80,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div className='w-1/2'>
-            <h3 className='uppercase text-acid-500'>Extras</h3>
+            <h3 className='uppercase'>Extras</h3>
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Tailwind Fluid</li>
