@@ -84,7 +84,7 @@ export default function HomePage() {
               <li className='mb-2'>Tailwind 3.4.x (4.x soon)</li>
               <li className='mb-2'>Bundle Analyzer</li>
               <li className='mb-2'>Next Sitemap</li>
-              <li className='mb-2'>ESLint + Prettier – WIP</li>
+              <li className='mb-2'>ESLint + Prettier</li>
             </ul>
           </div>
           <div className='md:hidden mb-3'>========================</div>
@@ -96,15 +96,15 @@ export default function HomePage() {
               <li className='mb-2'>More colors via tints.dev (OKLCH)</li>
               <li className='mb-2'>Support for variable font settings</li>
               <li className='mb-2'>Tuned heading classes: kilo, giga, etc.</li>
-              <li className='mb-2'>
-                Local and Google webfonts
-                <li className='mt-2'>- Mona Sans</li>
-                <li className='mt-2'>- Bitter</li>
-                <li className='mt-2'>- Monaspace</li>
-              </li>
+              <li className='mb-2'>Local and Google webfonts</li>
             </ul>
           </div>
         </div>
+      </div>
+
+      <div className='text-left w-full my-12'>
+        {' '}
+        <h2 className='text-lg font-medium mb-3'>To do</h2>
       </div>
     </main>
   );
