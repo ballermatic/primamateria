@@ -16,16 +16,17 @@ const todos = [
 
 function TodosList() {
   return (
-    <ul>
+    <ul className='list-none'>
       {todos.map((todo, index) => (
         <li
           key={index}
-          className='mb-3'>
+          className='mb-3 ps-3 -ms-3 relative flex items-start gap-2'>
           <CircleAlert
-            className='inline-block -mt-1 me-1 text-gray-400'
+            className='inline-block text-gray-400'
             size={24}
-          />{' '}
-          {todo}
+          />
+          <span className='flex-1'>{todo}</span>
+          <span className='before:w-6 before:h-6 before:inline-block before:absolute before:left-0 before:-mt-1 before:top-1/2'></span>
         </li>
       ))}
     </ul>
