@@ -136,7 +136,7 @@ export default function HomePage() {
       </div>
 
       <div className='text-left w-full my-12'>
-        <h2 className='text-lg font-medium mb-3'>To do‘s</h2>
+        <h2 className='text-lg font-medium mb-4'>To do‘s</h2>
         <TodosList />
       </div>
     </main>

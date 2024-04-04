@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+
+import graphic from '../../../../public/cookies.png';
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
@@ -7,10 +10,24 @@ export const metadata: Metadata = {
 
 export default function CookiePage() {
   return (
-    <main className='flex flex-col my-12'>
-      <div className='border-b border-smoke'>
-        <h1 className='giga ~p-3/8'>Cookie Policy</h1>
+    <main className='container mx-auto flex flex-col my-12 px-4'>
+      <div className=' ~pt-3/8 pb-12'>
+        <h1 className='giga mb-3 md:w-1/2'>Coooookies Policy</h1>
+        <p className='nano caps text-gray-400'>Date updated here</p>
       </div>
+      <div className='border-smoke border-2 relative'>
+        <Image
+          src={graphic}
+          alt='No cookies here'
+          width={0}
+          height={0}
+          sizes='50vw'
+          className='w-full h-auto'
+        />
+      </div>
+      <p className='my-6'>
+        Seriously though, this starter does not include analytics or tracking of any kind.
+      </p>
     </main>
   );
 }
