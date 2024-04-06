@@ -39,6 +39,10 @@ const config: Config = {
         tight: '-0.02em',
         tightish: '-0.01em',
       },
+      // Note: colors are defined in 3 places for this demo
+      // 1. Here, below
+      // 2. /tailwind/tailwindSafelist.js - avoid tree shaking, remove in production
+      // 3. /src/app/colors/colors.json - parsed for colors page
       colors: {
         white: 'oklch(98.73% 0.004 106.47 / <alpha-value>)',
         smoke: 'oklch(18.26% 0.002 286.2 / <alpha-value>)',
@@ -133,7 +137,7 @@ const config: Config = {
           '900': 'oklch(32.07% 0.155 263.74 / <alpha-value>)',
           '950': 'oklch(22.73% 0.118 263.29 / <alpha-value>)',
         },
-        orange: {
+        aurum: {
           '50': 'oklch(98.37% 0.009 44.89 / <alpha-value>)',
           '100': 'oklch(96.02% 0.022 49.93 / <alpha-value>)',
           '200': 'oklch(91.64% 0.048 50.83 / <alpha-value>)',
