@@ -20,7 +20,11 @@ const fontSerif = Bitter({
 });
 
 const fontMono = localFont({
-  src: '../fonts/MonaspaceArgon-Light.woff',
+  src: [
+    { path: '../fonts/MonaspaceArgon-Light.woff', weight: '300', style: 'normal' },
+    { path: '../fonts/MonaspaceArgon-LightItalic.woff', weight: '300', style: 'italic' },
+    { path: '../fonts/MonaspaceArgon-SemiBold.woff', weight: '600', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-mono',
 });

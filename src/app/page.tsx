@@ -5,7 +5,6 @@ import Mark from '@/components/logo/logo-mark';
 
 const todos = [
   'Tune serif font weights - balance with serif',
-  'Improve mono font support - variable selection(s)',
   'GSAP - mobile menu, then more',
   'Analytics - Plausible vs Google',
   'Open Graph image generation',
@@ -110,7 +109,7 @@ export default function HomePage() {
         </h2>
         <div className='flex flex-col md:flex-row bg-smoke text-white p-6 font-mono ~gap-4/8 text-sm'>
           <div className='md:w-1/2'>
-            <h3 className='uppercase'>Basics</h3>
+            <h3 className='uppercase font-semibold'>Basics</h3>
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Next.js 14.1.x app router</li>
@@ -122,7 +121,7 @@ export default function HomePage() {
           </div>
           <div className='md:hidden mb-3'>========================</div>
           <div className='md:w-1/2'>
-            <h3 className='uppercase'>Extras</h3>
+            <h3 className='uppercase font-semibold'>Extras</h3>
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Curated sans, serif, and mono webfonts</li>
