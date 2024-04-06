@@ -4,12 +4,11 @@ import Link from 'next/link';
 import Mark from '@/components/logo/logo-mark';
 
 const todos = [
-  'Tune serif font weights - balance with serif',
-  'GSAP - mobile menu, then more',
+  'Basic animation - mobile menu, microinteractions',
+  'Layout components',
   'Analytics - Plausible vs Google',
   'Open Graph image generation',
   'Payload CMS - waiting on 3.x alpha',
-  'Layout components',
   'Shiki for code blocks?',
 ];
 
@@ -37,15 +36,15 @@ export default function HomePage() {
     <main className='container mx-auto flex flex-col items-center p-12 '>
       <div className='flex max-w-xl flex-col items-center text-center'>
         <Mark className='~my-12/24 size-64' />
-        <h1 className='text-6xl font-serif tracking-tight mb-3'>Prima Materia</h1>
+        <h1 className='exa mb-3'>Prima Materia</h1>
         <h2 className='kilo mb-6 text-gray-400'>
           The primitive formless base of matter similar to chaos, the quintessence or aether.
         </h2>
         <div className='lede'>
           <p>
             In alchemy and philosophy, prima materia, materia prima or “first matter,” is the{' '}
-            <span className='font-serif italic'> ubiquitous starting material</span> required for
-            the alchemical magnum opus and the creation of the philosopher’s stone.
+            <span className='font-serif italic font-[320]'> ubiquitous starting material</span>{' '}
+            required for the alchemical magnum opus and the creation of the philosopher’s stone.
           </p>
           <Link
             href='https://en.wikipedia.org/wiki/Prima_materia'
@@ -60,10 +59,10 @@ export default function HomePage() {
         <Link
           href='/colors'
           className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
+          <h2 className='kilo mb-3 group-hover:text-blue-500'>
             Colors{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              <ArrowRight size={12} />
+              <ArrowRight size={18} />
             </span>
           </h2>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
@@ -74,24 +73,24 @@ export default function HomePage() {
         <Link
           href='/typography'
           className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
+          <h2 className='kilo mb-3 group-hover:text-blue-500'>
             Typography{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              <ArrowRight size={12} />
+              <ArrowRight size={18} />
             </span>
           </h2>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
-            Opinionated font-specific typography classes via @apply
+            Font face specific typography classes via @apply
           </p>
         </Link>
 
         <Link
           href='/sandbox'
           className='group grow rounded-sm border border-smoke p-6 px-5 bg-gradient-to-br from-transparent via-transparent to-blue-50 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='caps mb-3 font-medium group-hover:text-blue-500'>
+          <h2 className='kilo mb-3 group-hover:text-blue-500'>
             Sandbox{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
-              <ArrowRight size={12} />
+              <ArrowRight size={18} />
             </span>
           </h2>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
@@ -113,7 +112,9 @@ export default function HomePage() {
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Next.js 14.1.x app router</li>
-              <li className='mb-2'>Tailwind 3.4.x (4.x soon)</li>
+              <li className='mb-2'>
+                Tailwind 3.4.x <span className='italic'>(4.x soon)</span>
+              </li>
               <li className='mb-2'>Bundle Analyzer</li>
               <li className='mb-2'>Next Sitemap</li>
               <li className='mb-2'>ESLint + Prettier</li>
@@ -124,11 +125,34 @@ export default function HomePage() {
             <h3 className='uppercase font-semibold'>Extras</h3>
             <div className='mb-1'>------</div>
             <ul>
-              <li className='mb-2'>Curated sans, serif, and mono webfonts</li>
+              <li className='mb-2'>
+                Curated{' '}
+                <Link
+                  href='https://github.com/mona-sans'
+                  target='_blank'
+                  className='text-acid-500 hover:underline hover:text-acid-300'>
+                  sans
+                </Link>
+                ,{' '}
+                <Link
+                  href='https://fonts.google.com/specimen/Bitter'
+                  target='_blank'
+                  className='text-acid-500 hover:underline hover:text-acid-300'>
+                  sans serif
+                </Link>
+                , and{' '}
+                <Link
+                  href='https://monaspace.githubnext.com/'
+                  target='_blank'
+                  className='text-acid-500 hover:underline hover:text-acid-300'>
+                  mono
+                </Link>{' '}
+                webfonts
+              </li>
               <li className='mb-2'>Support for variable font settings</li>
               <li className='mb-2'>More colors via tints.dev (OKLCH)</li>
               <li className='mb-2'>Tailwind Fluid</li>
-              <li className='mb-2'>Tuned heading classes: kilo, giga, etc.</li>
+              <li className='mb-2'>Tuned typography</li>
             </ul>
           </div>
         </div>
@@ -141,3 +165,4 @@ export default function HomePage() {
     </main>
   );
 }
+//
