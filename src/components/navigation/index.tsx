@@ -38,7 +38,7 @@ export default function Navigation() {
           <MenuLarge menuPrimary={menuPrimary} />
         </div>
       </div>
-      <div className='mb-16 block md:hidden'>
+      <div className='mb-12 block md:hidden'>
         <div className='fixed flex w-full flex-row items-center justify-between bg-white/70'>
           <Link
             href='/'
