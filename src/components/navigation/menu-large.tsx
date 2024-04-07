@@ -13,7 +13,7 @@ export default function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) 
   const pathname = usePathname();
 
   return (
-    <div className='flex flex-row ~gap-2/4 me-2'>
+    <nav className='flex flex-row ~gap-2/4 me-2'>
       {menuPrimary.map((item, index) => {
         const isCurrentPage = pathname === item.href;
         return (
@@ -28,6 +28,6 @@ export default function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) 
           </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }
