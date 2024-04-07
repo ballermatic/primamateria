@@ -45,7 +45,7 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontSerif.variable}  ${fontMono.variable} flex min-h-dvh flex-col bg-white text-smoke`}>
         <Navigation />
-        {children}
+        <div className='mt-12'>{children}</div>
         <Footer />
       </body>
     </html>

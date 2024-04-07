@@ -63,11 +63,11 @@ function MenuSmall({
   );
 
   return (
-    <nav className='flex flex-col min-w-vw h-12'>
+    <nav className='z-50'>
       <header
         id='SmallMenuHeader'
         className={clsx(
-          'flex flex-row items-center fixed inset-0 h-12 justify-between z-40 ease-in-out duration-300',
+          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300',
           {
             'text-white': menuOpen,
             'text-smoke': !menuOpen,
@@ -88,23 +88,23 @@ function MenuSmall({
       </header>
       <div
         ref={menuMask}
-        id='mask'
         style={{
           clipPath: 'circle(0dvh at 93.5vw 1.5rem)',
-          zIndex: '30',
-          height: '100dvh',
-          top: '-1.5rem',
+          position: 'fixed',
+          left: '0',
+          right: '0',
+          top: '0',
         }}>
         <div
           id='menuLinks'
-          className='flex flex-col gap-4 items-center bg-smoke fixed inset-0 -top-12 pt-24'>
+          className='flex flex-col gap-4 items-center bg-smoke min-h-dvh pt-16'>
           {menuPrimary.map((item, index) => {
             const isCurrentPage = pathname === item.href;
             return (
               <Link
                 key={index}
                 href={item.href}
-                className={clsx('inline-block py-2 text-xl', {
+                className={clsx('inline-block py-2 text-2xl', {
                   'text-white': !isCurrentPage,
                   'text-gray-500 pointer-events-none': isCurrentPage,
                 })}
