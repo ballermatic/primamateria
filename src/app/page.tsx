@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Mark from '@/components/logo/logo-mark';
 
 const todos = [
-  'Basic animation - mobile menu, microinteractions',
   'Layout components',
   'Analytics - Plausible vs Google',
   'Open Graph image generation',
@@ -35,7 +34,7 @@ export default function HomePage() {
   return (
     <main className='container mx-auto flex flex-col items-center p-12 '>
       <div className='flex max-w-xl flex-col items-center text-center'>
-        <Mark className='~my-12/24 size-64' />
+        <Mark className='~mb-12/24 size-64' />
         <h1 className='exa mb-3'>Prima Materia</h1>
         <h2 className='kilo mb-6 text-gray-400'>
           The primitive formless base of matter similar to chaos, the quintessence or aether.
