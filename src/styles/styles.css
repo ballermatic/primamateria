@@ -82,6 +82,7 @@
     font-weight: 260;
     font-stretch: 106%;
     line-height: 1.67;
+    margin-block-start: 1em;
   }
   .narrative > p {
     @apply ~text-base/lg;
@@ -92,6 +93,7 @@
     font-weight: 283;
     font-stretch: 103%;
     line-height: 1.67;
+    margin-block-start: 1em;
   }
   .caption > p {
     @apply ~text-sm/base;
@@ -103,5 +105,6 @@
     font-stretch: 103%;
     letter-spacing: 0.005em;
     line-height: 1.67;
+    margin-block-start: 1em;
   }
 }

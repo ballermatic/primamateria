@@ -55,55 +55,49 @@ export default function TypographyPage() {
         </p>
       </div>
       <p className='mt-24 border-b-2 border-smoke pb-2 font-bold'>Body Text</p>
-      <div className='pt-12'>
-        <div className='lede'>
-          <p>
-            In a verdant glen, quirky zebras whispered enigmatic tales under the moon’s glow.
-            Juxtaposing realms, cryptic foxes danced by the sapphire lakes, their shadows entwining
-            with twilight’s embrace.
-          </p>
-          <p>
-            Nearby, whimsical jays orchestrated a symphony, echoing through the serene canopy of the
-            enchanted forest.
-          </p>
-        </div>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> lede
+      <div className='lede'>
+        <p>
+          In a verdant glen, quirky zebras whispered enigmatic tales under the moon’s glow.
+          Juxtaposing realms, cryptic foxes danced by the sapphire lakes, their shadows entwining
+          with twilight’s embrace.
+        </p>
+        <p>
+          Nearby, whimsical jays orchestrated a symphony, echoing through the serene canopy of the
+          enchanted forest.
         </p>
       </div>
-      <div className='pt-12'>
-        <div className='narrative'>
-          <p>
-            On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café,
-            merging with the city’s vibrant pulse. A breeze whispered through the trees, carrying
-            snippets of chatter and the distant hum of traffic.
-          </p>
-          <p>
-            In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
-            their silhouettes a testament to time’s passage. The evening sky, painted in hues of
-            orange and purple, draped over the skyline, its colors reflecting in the glass facades
-            of towering skyscrapers.
-          </p>
-        </div>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> narrative
+      <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
+        <span className='nano caps text-gray-500'>classname:</span> lede
+      </p>
+      <div className='narrative'>
+        <p>
+          On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
+          with the city’s vibrant pulse. A breeze whispered through the trees, carrying snippets of
+          chatter and the distant hum of traffic.
+        </p>
+        <p>
+          In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
+          their silhouettes a testament to time’s passage. The evening sky, painted in hues of
+          orange and purple, draped over the skyline, its colors reflecting in the glass facades of
+          towering skyscrapers.
         </p>
       </div>
-      <div className='pt-12'>
-        <div className='caption'>
-          <p>
-            On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café,
-            merging with the city’s vibrant pulse. A breeze whispered through the trees, carrying
-            snippets of chatter and the distant hum of traffic.
-          </p>
-          <p>
-            In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
-            their silhouettes a testament to time’s passage. The evening sky, painted in hues of
-            orange and purple, draped over the skyline, its colors reflecting in the glass facades
-            of towering skyscrapers.
-          </p>
-        </div>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
+      <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
+        <span className='nano caps text-gray-500'>classname:</span> narrative
+      </p>
+      <div className='caption'>
+        <p>
+          On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
+          with the city’s vibrant pulse. A breeze whispered through the trees, carrying snippets of
+          chatter and the distant hum of traffic.
+        </p>
+        <p>
+          In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
+          their silhouettes a testament to time’s passage. The evening sky, painted in hues of
+          orange and purple, draped over the skyline, its colors reflecting in the glass facades of
+          towering skyscrapers.
+        </p>
+        <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
           <span className='nano caps text-gray-500'>classname:</span> caption
         </p>
       </div>
