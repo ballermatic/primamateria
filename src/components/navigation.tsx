@@ -56,18 +56,18 @@ function MenuSmall({
       gsap.to(menuMask.current, {
         duration: 0.33,
         ease: 'power2.inOut',
-        clipPath: menuOpen ? 'circle(150% at 94% -3%)' : 'circle(0% at 94% -3%)',
+        clipPath: menuOpen ? 'circle(110dvh at 93.5vw 1.5rem)' : 'circle(0dvh at 93.5vw 1.5rem)',
       });
     },
     { scope: menuMask, dependencies: [menuOpen] },
   );
 
   return (
-    <nav className='flex flex-col min-w-vw fixed inset-0'>
+    <nav className='flex flex-col min-w-vw h-12'>
       <header
         id='SmallMenuHeader'
         className={clsx(
-          'flex flex-row items-center justify-between z-40 ease-in-out duration-300',
+          'flex flex-row items-center fixed inset-0 h-12 justify-between z-40 ease-in-out duration-300',
           {
             'text-white': menuOpen,
             'text-smoke': !menuOpen,
@@ -89,10 +89,15 @@ function MenuSmall({
       <div
         ref={menuMask}
         id='mask'
-        style={{ clipPath: 'circle(0% at 94% -3%)', zIndex: '30', height: '100dvh' }}>
+        style={{
+          clipPath: 'circle(0dvh at 93.5vw 1.5rem)',
+          zIndex: '30',
+          height: '100dvh',
+          top: '-1.5rem',
+        }}>
         <div
           id='menuLinks'
-          className='flex flex-col gap-4 items-center h-full bg-smoke fixed inset-0 pt-12'>
+          className='flex flex-col gap-4 items-center bg-smoke fixed inset-0 -top-12 pt-24'>
           {menuPrimary.map((item, index) => {
             const isCurrentPage = pathname === item.href;
             return (
