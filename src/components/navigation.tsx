@@ -7,6 +7,7 @@ import { Spin as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 import Logo from './logo';
 import LogoMark from './logo/logo-mark';
@@ -20,8 +21,8 @@ const menuPrimary: MenuItem[] = [
   { linkText: 'About', href: '/about' },
   { linkText: 'Colors', href: '/colors' },
   { linkText: 'Typography', href: '/typography' },
+  { linkText: 'Layouts', href: '/layouts' },
   { linkText: 'Sandbox', href: '/sandbox' },
-  { linkText: 'Github', href: 'https://github.com/ballermatic/primamateria' },
 ];
 
 function MenuSmall({
@@ -143,6 +144,12 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
           </Link>
         );
       })}
+      <Link
+        className='hover:text-blue-500 p-2 text-3xl'
+        target='_blank'
+        href='https://github.com/ballermatic/primamateria'>
+        <FaGithub />
+      </Link>
     </nav>
   );
 }
