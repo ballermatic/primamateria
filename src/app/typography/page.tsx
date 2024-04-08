@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+import SectionCategory from '@/components/section-category';
+import SectionHeader from '@/components/section-header';
+
 export const metadata: Metadata = {
   title: 'Typography: Mona Sans',
   description: 'Mona Sans courtesy of Github, in a highly opinionated specimen.',
@@ -17,44 +20,50 @@ export default function TypographyPage() {
           Serif »
         </Link>
       </h1>
-      <p className='mt-8 border-b-2 border-smoke pb-2 font-bold'>Headings</p>
+      <SectionHeader title='Headings' />
       <div className='pt-12'>
         <p className='exa'>Wandering Quails Deploy Eucalyptus Photons</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> exa
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='exa'
+        />
       </div>
       <div className='pt-12'>
         <p className='peta'>Burgeoning Mythical Xylophones Glisten</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> peta
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='peta'
+        />
       </div>
       <div className='pt-12'>
         <p className='tera'>Kingly Sparrows Fly the Evening Plains</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> tera
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='tera'
+        />
       </div>
       <div className='pt-12'>
         <p className='giga'>Brisk ferns envelop damp pathways</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> giga
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='giga'
+        />
       </div>
       <div className='pt-12'>
         <p className='mega'>Gargantuan whelks explore neptunian depths</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> mega
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='mega'
+        />
       </div>
       <div className='pt-12'>
         <p className='kilo'>Vibrant, quirky jackals roam zeniths, eclipsing moonlit fjords</p>
-        <p className='tracking-wide mt-6 border-t border-gray-300 pt-2'>
-          <span className='nano caps text-gray-500'>classname:</span> kilo
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='kilo'
+        />
       </div>
-      <p className='mt-24 border-b-2 border-smoke pb-2 font-bold'>Body Text</p>
+      <SectionHeader title='Body Text' />
       <div className='lede'>
         <p>
           In a verdant glen, quirky zebras whispered enigmatic tales under the moon’s glow.
@@ -66,9 +75,10 @@ export default function TypographyPage() {
           enchanted forest.
         </p>
       </div>
-      <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
-        <span className='nano caps text-gray-500'>classname:</span> lede
-      </p>
+      <SectionCategory
+        label='classname:'
+        text='lede'
+      />
       <div className='narrative'>
         <p>
           On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
@@ -82,9 +92,10 @@ export default function TypographyPage() {
           towering skyscrapers.
         </p>
       </div>
-      <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
-        <span className='nano caps text-gray-500'>classname:</span> narrative
-      </p>
+      <SectionCategory
+        label='classname:'
+        text='narrative'
+      />
       <div className='caption'>
         <p>
           On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
@@ -97,9 +108,10 @@ export default function TypographyPage() {
           orange and purple, draped over the skyline, its colors reflecting in the glass facades of
           towering skyscrapers.
         </p>
-        <p className='tracking-wide border-t border-gray-300 pt-2 mt-2 mb-6'>
-          <span className='nano caps text-gray-500'>classname:</span> caption
-        </p>
+        <SectionCategory
+          label='classname:'
+          text='caption'
+        />
       </div>
     </main>
   );
