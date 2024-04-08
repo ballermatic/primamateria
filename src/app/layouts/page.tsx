@@ -18,18 +18,44 @@ export default function LayoutComponentsPage() {
         </p>
       </div>
       <SectionHeader title='Automagically alternating paired columns' />
-      <div className='group/section [counter-increment:section]'>
-        <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
-          <div className='flex justify-center'>
-            <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-              stuff here ... WIP
+      {/* Alternating Section Columns */}
+      <div className='[counter-reset:section] space-y-8'>
+        {/* Section - 2 column */}
+        <section className='group/section [counter-increment:section]'>
+          <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
+            <div className='flex justify-center gap-8'>
+              <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
+                <div className='w-[33.75rem] flex-none lg:w-[45rem] bg-gray-400 aspect-video'>
+                  <p className='nano caps p-2'>Column One</p>
+                </div>
+              </div>
+              <div className='mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first border border-gray-400'>
+                <p className='nano caps p-2'>Column Two</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        {/* Section - 2 column */}
+        <section className='group/section [counter-increment:section]'>
+          <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
+            <div className='flex justify-center gap-8'>
+              <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
+                <div className='w-[33.75rem] flex-none lg:w-[45rem] bg-gray-400 aspect-video'>
+                  <p className='nano caps p-2'>Column One</p>
+                </div>
+              </div>
+              <div className='mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first border border-gray-400'>
+                <p className='nano caps p-2'>Column Two</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <SectionHeader title='Full bleed breakout from container' />
+      {/* End Alternating Section Columns */}
+
+      {/* <SectionHeader title='Full bleed breakout from container' />
       <SectionHeader title='Trio frame' />
-      <SectionHeader title='Subgrid cards' />
+      <SectionHeader title='Subgrid cards' /> */}
     </main>
   );
 }
