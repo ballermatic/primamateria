@@ -70,7 +70,7 @@
   }
   .nano {
     @apply ~text-xxs/xs !important;
-    letter-spacing: 0.125em;
+    letter-spacing: 0.075em;
   }
   /* Body Text */
   .lede > p {
