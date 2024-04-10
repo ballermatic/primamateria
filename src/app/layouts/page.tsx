@@ -1,11 +1,20 @@
 import type { Metadata } from 'next';
 
+import ListIcons, { ListItem } from '@/components/list-icons';
 import SectionHeader from '@/components/section-header';
-
 export const metadata: Metadata = {
   title: 'Layout Components',
   description: '',
 };
+
+//
+//
+const exampleListItems: ListItem[] = [
+  { icon: 'CircleAlert', item: 'Example Item 1' },
+  { icon: 'CircleAlert', item: 'Example Item 2' },
+  { icon: 'OctagonX', item: 'Example Item 3' },
+  { icon: 'CircleAlert', item: 'Example Item 4' },
+];
 
 export default function LayoutComponentsPage() {
   return (
@@ -18,11 +27,6 @@ export default function LayoutComponentsPage() {
         </p>
       </div>
       <SectionHeader title='Automagically alternating paired columns' />
-      {/*
-          Alternating Section Columns
-          lg:justify-end allows column to bleed out, remove if not desired
-          #TODO fix responsiveness, simplify markup
-      */}
       <p className='italic'>
         #TODO fix responsiveness, simplify markup, make component – lg:justify-end allows column to
         bleed, toggle prop?
@@ -60,6 +64,8 @@ export default function LayoutComponentsPage() {
         </section>
       </div>
       {/* End Alternating Section Columns */}
+      <SectionHeader title='Unordered list with lucide-react icons for bullets' />
+      <ListIcons listItems={exampleListItems} />
     </main>
   );
 }

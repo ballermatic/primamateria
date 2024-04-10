@@ -59,4 +59,4 @@ export default function ListIcons({ listItems, className }: ListIconsProps) {
 // <ListIcons
 //   listItems={exampleListItems}
 //   className='foo bar'
-// />;
+// />
