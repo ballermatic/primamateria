@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://eldritchfoundation.vercel.com',
+  siteUrl: 'https://primamateria.vercel.app',
   generateIndexSitemap: false,
   generateRobotsTxt: true,
   // robotsTxtOptions: {
@@ -11,5 +11,5 @@ module.exports = {
   //     },
   //   ],
   // },
-  // exclude: ['eldritchfoundation'],
+  // exclude: ['primamateria'],
 };
