@@ -27,9 +27,9 @@ export default function LayoutComponentsPage() {
         #TODO fix responsiveness, simplify markup, make component – lg:justify-end allows column to
         bleed, toggle prop?
       </p>
-      <div className='[counter-reset:section] space-y-8 my-8'>
+      <div className='space-y-8 my-8'>
         {/* Section - 2 column */}
-        <section className='group/section [counter-increment:section]'>
+        <section className='group/section'>
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
@@ -44,7 +44,7 @@ export default function LayoutComponentsPage() {
           </div>
         </section>
         {/* Section - 2 column */}
-        <section className='group/section [counter-increment:section]'>
+        <section className='group/section'>
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
