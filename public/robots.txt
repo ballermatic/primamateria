@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://eldritchfoundation.vercel.com
-
-# Sitemaps
-Sitemap: https://eldritchfoundation.vercel.com/sitemap.xml
