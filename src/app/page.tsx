@@ -1,34 +1,15 @@
-import { ArrowRight, CircleAlert, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
+import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
-const todos = [
-  'Layout components',
-  'Analytics - Plausible vs Google',
-  'Open Graph image generation',
-  'Payload CMS - waiting on 3.x alpha',
-  'Shiki for code blocks?',
+const todos: ListItem[] = [
+  { icon: 'CircleAlert', item: 'Layout components' },
+  { icon: 'CircleAlert', item: 'Analytics - Plausible vs Google' },
+  { icon: 'CircleAlert', item: 'Open Graph image generation' },
+  { icon: 'CircleAlert', item: 'Payload CMS - waiting on 3.x stable' },
 ];
-
-function TodosList() {
-  return (
-    <ul className='list-none'>
-      {todos.map((todo, index) => (
-        <li
-          key={index}
-          className='mb-3 ps-3 -ms-3 relative flex items-start gap-2'>
-          <CircleAlert
-            className='inline-block text-gray-400'
-            size={24}
-          />
-          <span className='flex-1'>{todo}</span>
-          <span className='before:w-6 before:h-6 before:inline-block before:absolute before:left-0 before:-mt-1 before:top-1/2'></span>
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export default function HomePage() {
   return (
@@ -159,7 +140,7 @@ export default function HomePage() {
 
       <div className='text-left w-full my-12'>
         <h2 className='text-lg font-medium mb-4'>To do‘s</h2>
-        <TodosList />
+        <ListIcons listItems={todos} />
       </div>
     </main>
   );
