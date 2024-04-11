@@ -68,7 +68,7 @@ function MenuSmall({
       <header
         id='SmallMenuHeader'
         className={clsx(
-          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300',
+          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300  border-b border-smoke/50',
           {
             'text-white': menuOpen,
             'text-smoke': !menuOpen,
@@ -87,6 +87,7 @@ function MenuSmall({
           toggle={() => menuToggle(!menuOpen)}
         />
       </header>
+      <div className='fixed inset-0 h-12 bg-gradient-to-b from-white via-white/70 backdrop-blur-sm'></div>
       <div
         ref={menuMask}
         style={{
