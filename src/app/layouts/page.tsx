@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const exampleListItems: ListItem[] = [
   { icon: 'CircleAlert', item: 'Example Item 1' },
   { icon: 'CircleAlert', item: 'Example Item 2' },
-  { icon: 'OctagonX', item: 'Example Item 3' },
+  { icon: 'OctagonX', item: 'Example Item 3', iconColor: 'text-red-500' },
   { icon: 'CircleAlert', item: 'Example Item 4' },
 ];
 
