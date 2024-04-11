@@ -17,12 +17,11 @@ export default function HomePage() {
       <div className='flex max-w-xl flex-col items-center text-center'>
         <Mark className='~mb-12/24 size-64' />
         <h1 className='exa mb-3'>Prima Materia</h1>
-        <h2 className='kilo mb-6 text-gray-400'>
-          The primitive formless base of matter similar to chaos, the quintessence or aether.
-        </h2>
+        <h2 className='kilo mb-6 text-gray-400'>Yet another NextJS starter</h2>
         <div className='lede'>
           <p>
-            In alchemy and philosophy, prima materia, materia prima or “first matter,” is the{' '}
+            The primitive formless base of matter similar to chaos, the quintessence or aether. In
+            alchemy and philosophy, prima materia, materia prima or “first matter,” is the{' '}
             <span className='font-serif italic font-[320]'> ubiquitous starting material</span>{' '}
             required for the alchemical magnum opus and the creation of the philosopher’s stone.
           </p>
@@ -81,9 +80,9 @@ export default function HomePage() {
 
       <div className='text-left w-full my-12'>
         <h2 className='text-lg font-medium mb-3'>
-          Specification{' '}
+          Specification:{' '}
           <span className='text-gray-400 font-normal'>
-            &hellip; yet another opinionated Nextjs starter
+            less is more
           </span>
         </h2>
         <div className='flex flex-col md:flex-row bg-smoke text-white p-6 font-mono ~gap-4/8 text-sm'>

@@ -39,7 +39,7 @@ export default function ListIcons({ listItems, className }: ListIconsProps) {
         return (
           <li
             key={index}
-            className='mb-3 ps-3 -ms-3 relative flex items-start gap-1'>
+            className='mb-3 ps-3 -ms-3 relative flex items-start gap-2'>
             <IconComponent className={clsx('inline-block', iconColor)} />
             <span className='flex-1'>{item}</span>
           </li>
