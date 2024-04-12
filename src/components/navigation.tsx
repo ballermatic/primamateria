@@ -92,11 +92,10 @@ function MenuSmall({
   return (
     <nav
       className={clsx('fixed inset-0 z-50 ease-in-out duration-300 delay-1000', {
-        'translate-y-0': showSmallMenuHeader,
+        'translate-y-0 delay-0': showSmallMenuHeader,
         '-translate-y-12': !showSmallMenuHeader,
       })}>
       <header
-        id='SmallMenuHeader'
         className={clsx(
           'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300 border-b border-smoke/50',
           {
@@ -117,7 +116,7 @@ function MenuSmall({
           toggle={() => menuToggle(!menuOpen)}
         />
       </header>
-      <div className='fixed inset-0 h-12 bg-gradient-to-b from-white/90 to-white/10 backdrop-blur-sm'></div>
+      <div className='fixed inset-0 h-12 bg-gradient-to-b from-white/90 via-white/60 to-white/5 backdrop-blur-sm'></div>
       <div
         ref={menuMask}
         style={{
@@ -127,29 +126,44 @@ function MenuSmall({
           right: '0',
           top: '0',
         }}>
-        <div
-          id='menuLinks'
-          className='flex flex-col gap-4 items-center bg-smoke min-h-dvh pt-16'>
-          {menuPrimary.map((item, index) => {
-            const isCurrentPage = pathname === item.href;
-            return (
-              <Link
-                key={index}
-                href={item.href}
-                className={clsx('inline-block py-2 text-2xl', {
-                  'text-white': !isCurrentPage,
-                  'text-gray-500 pointer-events-none': isCurrentPage,
-                })}
-                onClick={closeMenu}>
-                {item.linkText}
-              </Link>
-            );
-          })}
-          <div className='mt-12'>
-            <p className='text-sm max-w-60 text-center'>
-              Mobile menus are often different than those for larger screens
-            </p>
+        <div className='grid content-between bg-smoke min-h-dvh pt-16 pb-4'>
+          <div className='flex flex-col gap-4 items-center'>
+            {menuPrimary.map((item, index) => {
+              const isCurrentPage = pathname === item.href;
+              return (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className={clsx('inline-block p-2 text-2xl', {
+                    'text-white': !isCurrentPage,
+                    'text-gray-500 pointer-events-none': isCurrentPage,
+                  })}
+                  onClick={closeMenu}>
+                  {item.linkText}
+                </Link>
+              );
+            })}
+            <Link
+              className='p-2 text-2xl text-white'
+              target='_blank'
+              href='https://github.com/ballermatic/primamateria'>
+              Github
+            </Link>
           </div>
+          <footer className='text-center nano text-white'>
+            <Link
+              href='/privacy'
+              className='p-2'
+              onClick={closeMenu}>
+              Privacy
+            </Link>
+            <Link
+              href='/privacy/cookies'
+              className='p-2'
+              onClick={closeMenu}>
+              Cookies
+            </Link>
+          </footer>
         </div>
       </div>
     </nav>
