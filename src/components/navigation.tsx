@@ -34,7 +34,34 @@ function MenuSmall({
   menuOpen: boolean;
   menuToggle: (open: boolean) => void;
 }) {
-  // Disable current menu link
+  // Show or hide small menu header on scroll
+  const [showSmallMenuHeader, setShowSmallMenuHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const smallMenuHeaderVisibility = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) {
+        // if scrolling down, hide the navbar
+        setShowSmallMenuHeader(false);
+      } else {
+        // if scrolling up, show the navbar
+        setShowSmallMenuHeader(true);
+      }
+      // remember the current page location for the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', smallMenuHeaderVisibility);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', smallMenuHeaderVisibility);
+      };
+    }
+  }, [lastScrollY]); // eslint-disable-line
+
+  // To disable current menu link
   const pathname = usePathname();
 
   // Close menu on click
@@ -49,9 +76,8 @@ function MenuSmall({
     menuOpen ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = 'auto');
   }, [menuOpen]);
 
-  // Animation
+  // Animated toggle small menu links upon hamburger click
   const menuMask = useRef<HTMLDivElement>(null);
-
   useGSAP(
     () => {
       gsap.to(menuMask.current, {
@@ -64,11 +90,15 @@ function MenuSmall({
   );
 
   return (
-    <nav className='z-50'>
+    <nav
+      className={clsx('fixed inset-0 z-50 ease-in-out duration-300 delay-1000', {
+        'translate-y-0': showSmallMenuHeader,
+        '-translate-y-12': !showSmallMenuHeader,
+      })}>
       <header
         id='SmallMenuHeader'
         className={clsx(
-          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300  border-b border-smoke/50',
+          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300 border-b border-smoke/50',
           {
             'text-white': menuOpen,
             'text-smoke': !menuOpen,
@@ -87,7 +117,7 @@ function MenuSmall({
           toggle={() => menuToggle(!menuOpen)}
         />
       </header>
-      <div className='fixed inset-0 h-12 bg-gradient-to-b from-white via-white/70 backdrop-blur-sm'></div>
+      <div className='fixed inset-0 h-12 bg-gradient-to-b from-white/90 to-white/10 backdrop-blur-sm'></div>
       <div
         ref={menuMask}
         style={{
@@ -156,6 +186,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
 }
 
 export default function Navigation() {
+  // Small menu links state
   const [menuOpen, menuToggle] = useState(false);
 
   return (
