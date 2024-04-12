@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -16,8 +17,8 @@ export default function TypographySerifPage() {
         Typography: Bitter
         <Link
           href='/typography'
-          className='font-sans text-gray-400 hover:text-blue-500 hover:underline'>
-          Sans »
+          className='inline-flex items-center gap-2 font-sans text-gray-400 hover:text-blue-500'>
+          Sans <ArrowRight />
         </Link>
       </h1>
       <div className='font-serif'>

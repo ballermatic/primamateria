@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -16,8 +17,8 @@ export default function TypographyPage() {
         Typography: Mona Sans
         <Link
           href='/typography/serif'
-          className='font-serif font-normal text-gray-400 hover:text-blue-500 hover:underline'>
-          Serif »
+          className='inline-flex items-center gap-2 font-serif font-normal text-gray-400 hover:text-blue-500'>
+          Serif <ArrowRight />
         </Link>
       </h1>
       <SectionHeader title='Headings' />

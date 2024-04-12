@@ -1,3 +1,4 @@
+import tailwindForms from '@tailwindcss/forms';
 import {
   defaultThemeFontSizeInRems,
   defaultThemeScreensInRems,
@@ -206,7 +207,7 @@ const config: Config = {
     },
     // Overrides here if any
   },
-  plugins: [fluidCorePlugins, fontVariarionSettingsPlugin],
+  plugins: [tailwindForms, fluidCorePlugins, fontVariarionSettingsPlugin],
   safelist: safelist, // remove if not using the colors page
 };
 export default config;
