@@ -14,6 +14,7 @@
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "@hookform/resolvers": "^3.3.4",
     "@next/bundle-analyzer": "^14.1.4",
     "@next/third-parties": "^14.1.4",
     "autoprefixer": "^10.4.7",
@@ -24,10 +25,13 @@
     "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.3",
     "react-icons": "^5.0.1",
-    "sharp": "^0.33.3"
+    "sharp": "^0.33.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

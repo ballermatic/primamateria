@@ -18,10 +18,10 @@ interface MenuItem {
 }
 
 const menuPrimary: MenuItem[] = [
-  { linkText: 'About', href: '/about' },
-  { linkText: 'Colors', href: '/colors' },
   { linkText: 'Typography', href: '/typography' },
+  { linkText: 'Colors', href: '/colors' },
   { linkText: 'Layouts', href: '/layouts' },
+  { linkText: 'Forms', href: '/forms' },
   { linkText: 'Sandbox', href: '/sandbox' },
 ];
 
