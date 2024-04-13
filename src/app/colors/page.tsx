@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+import Heading from '@/components/heading';
+
 import ColorCard from './ColorCard';
 import colorsData from './colors.json';
 
@@ -15,7 +17,11 @@ export default function ColorsPage() {
 
   return (
     <main className='container mx-auto my-12 flex flex-col ~p-3/8'>
-      <h1 className='giga mb-2'>Color Selects</h1>
+      <Heading
+        level='h1'
+        preset='giga'>
+        Color Selects
+      </Heading>
       <p className='pb-12'>
         Default Tailwind colors enhanced with real-world references and processed via{' '}
         <Link
@@ -28,7 +34,12 @@ export default function ColorsPage() {
       </p>
       {Object.entries(colors).map(([colorName, colorShades]) => (
         <div key={colorName}>
-          <h2 className='kilo mb-4 mt-8'>{colorName}</h2>
+          <Heading
+            level='h2'
+            preset='kilo'
+            className='mb-4 mt-8'>
+            {colorName}
+          </Heading>
           <ColorCard
             colorName={colorName}
             colorShades={colorShades}

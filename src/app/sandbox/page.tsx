@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
+import Heading from '@/components/heading';
+
 export const metadata: Metadata = {
   title: 'Sandbox',
   description: 'Just playing around... in the sand.',
@@ -10,7 +12,12 @@ export default function SandboxPage() {
   return (
     <main className='-z-50 flex flex-col overflow-hidden'>
       <div className='border-b border-smoke bg-smoke'>
-        <h1 className='nano caps text-white ~p-3/8'>Sandbox</h1>
+        <Heading
+          level='h1'
+          preset='nano'
+          className='caps text-white ~p-3/8'>
+          Sandbox
+        </Heading>
       </div>
 
       <div className='flex grow items-center bg-gradient-to-br from-bluebird-500 to-cobalt-500 ~p-12/20'>
@@ -20,9 +27,12 @@ export default function SandboxPage() {
       </div>
 
       <div className='flex grow items-center justify-between bg-gradient-to-r from-pucker-500 to-pucker-700 ~p-8/16'>
-        <p className='exa text-ticonderoga-500'>
+        <Heading
+          level='h2'
+          preset='exa'
+          className='text-ticonderoga-500'>
           Luck favors the bold, <span className='font-serif font-light italic'>darling</span>
-        </p>
+        </Heading>
         <div className='ml-12 flex size-72 flex-col items-center justify-center rounded-full rounded-tr-none bg-ticonderoga-500 text-center shadow-xl shadow-pucker-800'>
           <p className='text-2xl font-bold leading-tight tracking-tight text-pucker-700'>
             Edna Mode
@@ -41,9 +51,7 @@ export default function SandboxPage() {
             <span className='border-b-2 border-ticonderoga-500 font-medium'>clarity</span>.
           </p>
         </div>
-        <div
-          className='flex grow items-center justify-center
-        '>
+        <div className='flex grow items-center justify-center'>
           <Image
             src='../../../thingy.svg'
             alt='A thingy'

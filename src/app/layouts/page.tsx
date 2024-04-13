@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import Heading from '@/components/heading';
 import ListIcons, { ListItem } from '@/components/list-icons';
 import SectionHeader from '@/components/section-header';
 export const metadata: Metadata = {
@@ -20,7 +21,12 @@ export default function LayoutComponentsPage() {
   return (
     <main className='container mx-auto my-12 flex flex-col px-4'>
       <div className='pb-12 ~pt-3/8'>
-        <h1 className='giga mb-3 md:w-1/2'>Layout Components</h1>
+        <Heading
+          level='h1'
+          preset='giga'
+          className='mb-3 md:w-1/2'>
+          Layout Components
+        </Heading>
         <p>
           Frequently used layout patterns.{' '}
           <span className='italic'>Very much a work in progress.</span>

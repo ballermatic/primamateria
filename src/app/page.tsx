@@ -1,11 +1,12 @@
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 
+import Heading from '@/components/heading';
 import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
 const todos: ListItem[] = [
-  { icon: 'CircleAlert', item: 'Headings component to replace @apply rules' },
+  { icon: 'CircleAlert', item: 'Better medium size heading presets' },
   { icon: 'CircleAlert', item: 'Forms' },
   { icon: 'CircleAlert', item: 'Handy components: layouts/sections, social, etc' },
   { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
@@ -19,8 +20,18 @@ export default function HomePage() {
     <main className='container mx-auto flex flex-col items-center p-12 '>
       <div className='flex max-w-xl flex-col items-center text-center'>
         <Mark className='size-64 ~mb-12/24' />
-        <h1 className='exa mb-3'>Prima Materia</h1>
-        <h2 className='kilo mb-6 text-gray-400'>Yet another NextJS starter</h2>
+        <Heading
+          level='h1'
+          preset='exa'
+          className='mb-0'>
+          Prima Materia
+        </Heading>
+        <Heading
+          level='h2'
+          preset='kilo'
+          className='mb-6 mt-3 text-gray-400'>
+          Yet another NextJS starter
+        </Heading>
         <div className='lede'>
           <p>
             The primitive formless base of matter similar to chaos, the quintessence or aether. In
@@ -41,12 +52,15 @@ export default function HomePage() {
         <Link
           href='/colors'
           className='group grow rounded-sm border border-smoke bg-gradient-to-br from-transparent via-transparent to-blue-50 p-6 px-5 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='kilo mb-3 group-hover:text-blue-500'>
+          <Heading
+            level='h2'
+            preset='kilo'
+            className='mb-3 group-hover:text-blue-500'>
             Colors{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               <ArrowRight size={18} />
             </span>
-          </h2>
+          </Heading>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
             Default colors enhanced via tints.dev.
           </p>
@@ -55,12 +69,15 @@ export default function HomePage() {
         <Link
           href='/typography'
           className='group grow rounded-sm border border-smoke bg-gradient-to-br from-transparent via-transparent to-blue-50 p-6 px-5 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='kilo mb-3 group-hover:text-blue-500'>
+          <Heading
+            level='h2'
+            preset='kilo'
+            className='mb-3 group-hover:text-blue-500'>
             Typography{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               <ArrowRight size={18} />
             </span>
-          </h2>
+          </Heading>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
             Font face specific typography classes via @apply
           </p>
@@ -69,12 +86,15 @@ export default function HomePage() {
         <Link
           href='/sandbox'
           className='group grow rounded-sm border border-smoke bg-gradient-to-br from-transparent via-transparent to-blue-50 p-6 px-5 hover:border-blue-500 hover:to-blue-100'>
-          <h2 className='kilo mb-3 group-hover:text-blue-500'>
+          <Heading
+            level='h2'
+            preset='kilo'
+            className='mb-3 group-hover:text-blue-500'>
             Sandbox{' '}
             <span className='inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none'>
               <ArrowRight size={18} />
             </span>
-          </h2>
+          </Heading>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
             Playing with typography and color
           </p>
@@ -82,12 +102,15 @@ export default function HomePage() {
       </div>
 
       <div className='my-12 w-full text-left'>
-        <h2 className='mb-3 text-lg font-medium'>
-          Specification: <span className='font-normal text-gray-400'>less is more</span>
-        </h2>
+        <Heading
+          level='h2'
+          preset='kilo'
+          className='mb-3 text-lg font-medium'>
+          Specification
+        </Heading>
         <div className='flex flex-col bg-smoke p-6 font-mono text-sm text-white ~gap-4/8 md:flex-row'>
           <div className='md:w-1/2'>
-            <h3 className='font-semibold uppercase'>Basics</h3>
+            <p className='font-semibold uppercase'>Basics</p>
             <div className='mb-1'>------</div>
             <ul>
               <li className='mb-2'>Next.js 14.1.x app router</li>
@@ -102,9 +125,10 @@ export default function HomePage() {
           </div>
           <div className='mb-3 md:hidden'>========================</div>
           <div className='md:w-1/2'>
-            <h3 className='font-semibold uppercase'>Extras</h3>
+            <p className='font-semibold uppercase'>Extras</p>
             <div className='mb-1'>------</div>
             <ul>
+              <li className='mb-2'>Heading component with extensive typographic tuning</li>
               <li className='mb-2'>
                 Curated{' '}
                 <Link
@@ -139,7 +163,12 @@ export default function HomePage() {
       </div>
 
       <div className='my-12 w-full text-left'>
-        <h2 className='mb-4 text-lg font-medium'>To do‘s</h2>
+        <Heading
+          level='h2'
+          preset='kilo'
+          className='mb-6 text-lg font-medium'>
+          To do‘s
+        </Heading>
         <ListIcons listItems={todos} />
       </div>
     </main>

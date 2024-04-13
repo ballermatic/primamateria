@@ -59,12 +59,12 @@ export default function Heading({
         'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
     },
     nano: {
-      default: '~text-xxs/xs !important font-semiexpanded',
+      default: '~text-xxs/xs !important font-semiexpanded tracking-wider',
       serif: 'font-serif ~text-xxs/xs !important',
     },
   };
 
-  // Allow serif to replace
+  // Allow serif to override
   const defaultClass = preset ? styles[preset].default : '';
   const serifClass = preset && serif ? styles[preset].serif : '';
   const headingClass = clsx(defaultClass, serifClass, className);
