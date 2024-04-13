@@ -5,6 +5,7 @@ const fontVariationSettings = plugin(function ({ addUtilities }) {
     narrow: 75,
     condensed: 87.5,
     base: 100,
+    semiexpanded: 106,
     expanded: 112.5,
     wide: 125,
   };

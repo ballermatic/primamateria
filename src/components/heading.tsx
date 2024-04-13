@@ -24,37 +24,42 @@ export default function Heading({
   // Tune these based on font choices
   const styles = {
     exa: {
-      default: '~text-5xl/8xl text-balance font-[560] tracking-[-0.045em] leading-none mb-[0.5em]',
+      default:
+        '~text-5xl/8xl text-balance font-semiexpanded font-[560] tracking-[-0.045em] leading-none mb-[0.5em]',
       serif:
         'font-serif ~text-5xl/8xl text-balance font-[520] tracking-[-0.045em] leading-none mb-[0.5em]',
     },
     peta: {
-      default: '~text-4xl/7xl text-balance font-[535] tracking-[-0.033em] leading-none mb-[0.5em]',
+      default:
+        '~text-4xl/7xl text-balance font-semiexpanded font-[535] tracking-[-0.033em] leading-none mb-[0.5em]',
       serif:
         'font-serif ~text-4xl/7xl text-balance font-[520] tracking-[-0.025em] leading-none mb-[0.5em]',
     },
     tera: {
-      default: '~text-3xl/6xl text-balance font-[509] tracking-[-0.0275em] leading-none mb-[0.5em]',
+      default:
+        '~text-3xl/6xl text-balance font-semiexpanded font-[509] tracking-[-0.0275em] leading-none mb-[0.5em]',
       serif: 'font-serif ~text-3xl/6xl text-balance font-[490] tracking-[-0.02em]',
     },
     giga: {
       default:
-        '~text-2xl/5xl text-balance font-[484] tracking-[-0.025em] leading-[1.125] mb-[0.5em]',
+        '~text-2xl/5xl text-balance font-semiexpanded font-[484] tracking-[-0.025em] leading-[1.125] mb-[0.5em]',
       serif:
         'font-serif ~text-2xl/5xl text-balance font-[466] tracking-[-0.0175em] leading-none mb-[0.5em]',
     },
     mega: {
-      default: '~text-xl/4xl text-balance font-[484] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
+      default:
+        '~text-xl/4xl text-balance font-semiexpanded font-[484] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
       serif:
         'font-serif ~text-xl/4xl text-balance font-[466] tracking-[-0.01em] leading-[1.125] mb-[0.5em]',
     },
     kilo: {
-      default: '~text-xl/3xl text-balance font-[440] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
+      default:
+        '~text-xl/3xl text-balance font-semiexpanded font-[440] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
       serif:
         'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
     },
     nano: {
-      default: '~text-xxs/xs !important',
+      default: '~text-xxs/xs !important font-semiexpanded',
       serif: 'font-serif ~text-xxs/xs !important',
     },
   };
