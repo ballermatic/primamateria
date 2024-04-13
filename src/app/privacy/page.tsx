@@ -20,7 +20,7 @@ export default function PrivacyPage() {
           className='mb-3 md:w-1/2'>
           Privacy Policy
         </Heading>
-        <p className='text-gray-400'>Date updated here</p>
+        <p className='text-gray-500'>Date updated here</p>
       </div>
       <div className='relative border-2 border-smoke'>
         <Image

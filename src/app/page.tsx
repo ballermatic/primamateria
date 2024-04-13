@@ -29,7 +29,7 @@ export default function HomePage() {
         <Heading
           level='h2'
           preset='kilo'
-          className='mb-6 mt-3 text-gray-400'>
+          className='mb-6 text-gray-500'>
           Yet another NextJS starter
         </Heading>
         <div className='lede'>
@@ -134,21 +134,21 @@ export default function HomePage() {
                 <Link
                   href='https://github.com/mona-sans'
                   target='_blank'
-                  className='text-acid-500 hover:text-acid-300 hover:underline'>
+                  className='text-acid-500 underline hover:text-acid-300'>
                   sans
                 </Link>
                 ,{' '}
                 <Link
                   href='https://fonts.google.com/specimen/Bitter'
                   target='_blank'
-                  className='text-acid-500 hover:text-acid-300 hover:underline'>
+                  className='text-acid-500 underline hover:text-acid-300'>
                   sans serif
                 </Link>
                 , and{' '}
                 <Link
                   href='https://monaspace.githubnext.com/'
                   target='_blank'
-                  className='text-acid-500 hover:text-acid-300 hover:underline'>
+                  className='text-acid-500 underline hover:text-acid-300'>
                   mono
                 </Link>{' '}
                 webfonts

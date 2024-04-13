@@ -43,11 +43,11 @@ export default function LayoutComponentsPage() {
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none bg-gray-400 lg:w-[45rem]'>
+                <div className='w-[33.75rem] flex-none bg-gray-500 lg:w-[45rem]'>
                   <p className='nano caps p-2 text-center'>Column One</p>
                 </div>
               </div>
-              <div className='mt-12 border border-gray-400 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
+              <div className='mt-12 border border-gray-500 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
                 <p className='nano caps p-2 text-center'>Column Two</p>
               </div>
             </div>
@@ -58,11 +58,11 @@ export default function LayoutComponentsPage() {
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none bg-gray-400 lg:w-[45rem]'>
+                <div className='w-[33.75rem] flex-none bg-gray-500 lg:w-[45rem]'>
                   <p className='nano caps p-2 text-center'>Column One</p>
                 </div>
               </div>
-              <div className='mt-12 border border-gray-400 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
+              <div className='mt-12 border border-gray-500 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
                 <p className='nano caps p-2 text-center'>Column Two</p>
               </div>
             </div>

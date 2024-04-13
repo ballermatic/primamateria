@@ -34,7 +34,7 @@ type ListIconsProps = {
 export default function ListIcons({ listItems, className }: ListIconsProps) {
   return (
     <ul className={clsx('list-none', className)}>
-      {listItems.map(({ icon: iconName, item, iconColor = 'text-gray-400' }, index) => {
+      {listItems.map(({ icon: iconName, item, iconColor = 'text-gray-500' }, index) => {
         const IconComponent = iconComponents[iconName];
         return (
           <li
@@ -50,7 +50,7 @@ export default function ListIcons({ listItems, className }: ListIconsProps) {
 }
 
 // How to use
-// Override icon default icon color text-gray-400 with text-*-*
+// Override icon default icon color text-gray-500 with text-*-*
 //
 // import ListIcons, { ListItem } from '@/components/list-icons'
 //

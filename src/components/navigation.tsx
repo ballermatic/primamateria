@@ -183,7 +183,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
             href={item.href}
             className={clsx('mt-1 border-b-2 border-transparent p-2', {
               'hover:text-blue-500 hover:border-blue-500 hover:border-b-2': !isCurrentPage,
-              'text-gray-400 pointer-events-none': isCurrentPage,
+              'text-gray-500 pointer-events-none': isCurrentPage,
             })}>
             {item.linkText}
           </Link>
@@ -193,6 +193,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
         className='p-2 text-3xl hover:text-blue-500'
         target='_blank'
         href='https://github.com/ballermatic/primamateria'>
+        <span className='sr-only'>Twitter</span>
         <FaGithub />
       </Link>
     </nav>

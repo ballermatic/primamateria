@@ -22,7 +22,7 @@ export default function TypographySerifPage() {
         Typography: Bitter
         <Link
           href='/typography'
-          className='inline-flex items-center gap-2 font-sans text-gray-400 hover:text-blue-500'>
+          className='inline-flex items-center gap-2 font-sans text-gray-500 hover:text-blue-500'>
           Sans <ArrowRight />
         </Link>
       </Heading>

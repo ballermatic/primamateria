@@ -21,7 +21,7 @@ export default function TypographyPage() {
         Typography: Mona Sans{' '}
         <Link
           href='/typography/serif'
-          className='inline-flex items-center gap-2 font-serif font-normal text-gray-400 hover:text-blue-500'>
+          className='inline-flex items-center gap-2 font-serif font-normal text-gray-500 hover:text-blue-500'>
           Serif <ArrowRight />
         </Link>
       </Heading>
