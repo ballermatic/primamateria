@@ -91,7 +91,7 @@ function MenuSmall({
 
   return (
     <nav
-      className={clsx('fixed inset-0 z-50 ease-in-out duration-300 delay-1000', {
+      className={clsx('fixed inset-0 z-50 ease-in-out duration-500 delay-300', {
         'translate-y-0 delay-0': showSmallMenuHeader,
         '-translate-y-12': !showSmallMenuHeader,
       })}>
