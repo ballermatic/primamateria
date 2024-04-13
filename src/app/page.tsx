@@ -5,10 +5,13 @@ import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
 const todos: ListItem[] = [
-  { icon: 'CircleAlert', item: 'Layout components' },
-  { icon: 'CircleAlert', item: 'Analytics - Plausible vs Google' },
+  { icon: 'CircleAlert', item: 'Headings component to replace @apply rules' },
+  { icon: 'CircleAlert', item: 'Forms' },
+  { icon: 'CircleAlert', item: 'Handy components: layouts/sections, social, etc' },
+  { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
+  { icon: 'CircleAlert', item: 'Payload CMS 3.x' },
   { icon: 'CircleAlert', item: 'Open Graph image generation' },
-  { icon: 'CircleAlert', item: 'Payload CMS - waiting on 3.x stable' },
+  { icon: 'CircleAlert', item: 'GSAP animation presets + Replace CSS animation with GSAP' },
 ];
 
 export default function HomePage() {
