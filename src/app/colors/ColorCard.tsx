@@ -1,3 +1,6 @@
+/* eslint-disable */
+// This prevents eslint-plugin-tailwindcss from warning on bg-${colorName}-${shade}
+
 interface ColorShades {
   [key: string]: string;
 }
@@ -14,7 +17,7 @@ export default function ColorCard({ colorName, colorShades }: ColorCardProps) {
         <div
           key={shade}
           className='flex-auto'>
-          <div className={`h-24 mb-1 bg-${colorName}-${shade}`}></div>
+          <div className={`mb-1 h-24 bg-${colorName}-${shade}`}></div>
           <p className='text-xs'>{shade}</p>
         </div>
       ))}

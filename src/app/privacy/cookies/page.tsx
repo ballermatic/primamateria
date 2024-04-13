@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 
 export default function CookiePage() {
   return (
-    <main className='container mx-auto flex flex-col my-12 px-4'>
-      <div className=' ~pt-3/8 pb-12'>
+    <main className='container mx-auto my-12 flex flex-col px-4'>
+      <div className=' pb-12 ~pt-3/8'>
         <h1 className='giga mb-3 md:w-1/2'>Coooookies Policy</h1>
         <p className='nano caps text-gray-400'>Date updated here</p>
       </div>
-      <div className='border-smoke border-2 relative'>
+      <div className='relative border-2 border-smoke'>
         <Image
           src={graphic}
           alt='No cookies here'
           width={0}
           height={0}
           sizes='50vw'
-          className='w-full h-auto'
+          className='h-auto w-full'
         />
       </div>
       <p className='my-6'>

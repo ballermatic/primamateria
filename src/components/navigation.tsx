@@ -91,13 +91,13 @@ function MenuSmall({
 
   return (
     <nav
-      className={clsx('fixed inset-0 z-50 ease-in-out duration-500 delay-300', {
+      className={clsx('fixed inset-0 z-50 delay-300 duration-500 ease-in-out', {
         'translate-y-0 delay-0': showSmallMenuHeader,
         '-translate-y-12': !showSmallMenuHeader,
       })}>
       <header
         className={clsx(
-          'fixed inset-0 h-12 flex flex-row items-center justify-between z-40 ease-in-out duration-300 border-b border-smoke/50',
+          'fixed inset-0 z-40 flex h-12 flex-row items-center justify-between border-b border-smoke/50 duration-300 ease-in-out',
           {
             'text-white': menuOpen,
             'text-smoke': !menuOpen,
@@ -126,8 +126,8 @@ function MenuSmall({
           right: '0',
           top: '0',
         }}>
-        <div className='grid content-between bg-smoke min-h-dvh pt-16 pb-4'>
-          <div className='flex flex-col gap-4 items-center'>
+        <div className='grid min-h-dvh content-between bg-smoke pb-4 pt-16'>
+          <div className='flex flex-col items-center gap-4'>
             {menuPrimary.map((item, index) => {
               const isCurrentPage = pathname === item.href;
               return (
@@ -150,7 +150,7 @@ function MenuSmall({
               Github
             </Link>
           </div>
-          <footer className='text-center nano text-white'>
+          <footer className='nano text-center text-white'>
             <Link
               href='/privacy'
               className='p-2'
@@ -174,14 +174,14 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
   const pathname = usePathname();
 
   return (
-    <nav className='flex flex-row ~gap-2/4 me-2'>
+    <nav className='me-2 flex flex-row ~gap-2/4'>
       {menuPrimary.map((item, index) => {
         const isCurrentPage = pathname === item.href;
         return (
           <Link
             key={index}
             href={item.href}
-            className={clsx('p-2 border-b-2 border-transparent mt-1', {
+            className={clsx('mt-1 border-b-2 border-transparent p-2', {
               'hover:text-blue-500 hover:border-blue-500 hover:border-b-2': !isCurrentPage,
               'text-gray-400 pointer-events-none': isCurrentPage,
             })}>
@@ -190,7 +190,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
         );
       })}
       <Link
-        className='hover:text-blue-500 p-2 text-3xl'
+        className='p-2 text-3xl hover:text-blue-500'
         target='_blank'
         href='https://github.com/ballermatic/primamateria'>
         <FaGithub />
@@ -206,12 +206,12 @@ export default function Navigation() {
   return (
     <>
       <div className='hidden md:block'>
-        <div className='flex flex-row justify-between items-center gap-4 border-b border-smoke'>
+        <div className='flex flex-row items-center justify-between gap-4 border-b border-smoke'>
           <Logo />
           <MenuLarge menuPrimary={menuPrimary} />
         </div>
       </div>
-      <div className='block md:hidden z-50'>
+      <div className='z-50 block md:hidden'>
         <MenuSmall
           menuPrimary={menuPrimary}
           menuOpen={menuOpen}

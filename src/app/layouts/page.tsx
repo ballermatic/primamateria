@@ -18,8 +18,8 @@ const exampleListItems: ListItem[] = [
 
 export default function LayoutComponentsPage() {
   return (
-    <main className='container mx-auto flex flex-col my-12 px-4'>
-      <div className=' ~pt-3/8 pb-12'>
+    <main className='container mx-auto my-12 flex flex-col px-4'>
+      <div className='pb-12 ~pt-3/8'>
         <h1 className='giga mb-3 md:w-1/2'>Layout Components</h1>
         <p>
           Frequently used layout patterns.{' '}
@@ -31,17 +31,17 @@ export default function LayoutComponentsPage() {
         #TODO fix responsiveness, simplify markup, make component – lg:justify-end allows column to
         bleed, toggle prop?
       </p>
-      <div className='space-y-8 my-8'>
+      <div className='my-8 space-y-8'>
         {/* Section - 2 column */}
         <section className='group/section'>
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none lg:w-[45rem] bg-gray-400'>
+                <div className='w-[33.75rem] flex-none bg-gray-400 lg:w-[45rem]'>
                   <p className='nano caps p-2 text-center'>Column One</p>
                 </div>
               </div>
-              <div className='mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first border border-gray-400'>
+              <div className='mt-12 border border-gray-400 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
                 <p className='nano caps p-2 text-center'>Column Two</p>
               </div>
             </div>
@@ -52,11 +52,11 @@ export default function LayoutComponentsPage() {
           <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
             <div className='flex justify-center gap-8'>
               <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none lg:w-[45rem] bg-gray-400'>
+                <div className='w-[33.75rem] flex-none bg-gray-400 lg:w-[45rem]'>
                   <p className='nano caps p-2 text-center'>Column One</p>
                 </div>
               </div>
-              <div className='mt-12 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first border border-gray-400'>
+              <div className='mt-12 border border-gray-400 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
                 <p className='nano caps p-2 text-center'>Column Two</p>
               </div>
             </div>

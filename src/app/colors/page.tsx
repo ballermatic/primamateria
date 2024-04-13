@@ -21,7 +21,7 @@ export default function ColorsPage() {
         <Link
           href='https://www.tints.dev/'
           target='_blank'
-          className='hover:underline hover:text-blue-500'>
+          className='hover:text-blue-500 hover:underline'>
           Tints.dev
         </Link>{' '}
         using the OKLCH color space.

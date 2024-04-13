@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function SandboxPage() {
   return (
-    <main className='flex flex-col overflow-hidden -z-50'>
+    <main className='-z-50 flex flex-col overflow-hidden'>
       <div className='border-b border-smoke bg-smoke'>
         <h1 className='nano caps text-white ~p-3/8'>Sandbox</h1>
       </div>
@@ -32,7 +32,7 @@ export default function SandboxPage() {
         </div>
       </div>
 
-      <div className='flex flex-1 items-center justify-between border-x-8 border-grass-500 bg-ticonderoga-50 md:~mx-12/24 ~gap-16/24 ~p-12/24'>
+      <div className='flex flex-1 items-center justify-between border-x-8 border-grass-500 bg-ticonderoga-50 ~gap-16/24 ~p-12/24 md:~mx-12/24'>
         <div>
           <p className='font-serif text-4xl font-light tracking-tight'>Constructive authority</p>
           <p className='ml-1 mt-3 text-xl font-light'>

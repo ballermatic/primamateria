@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function TypographySerifPage() {
   return (
     <main className='container mx-auto my-12 flex flex-col ~p-3/8'>
-      <h1 className='giga flex justify-between ~mb-6/12 font-serif'>
+      <h1 className='giga flex justify-between font-serif ~mb-6/12'>
         Typography: Bitter
         <Link
           href='/typography'

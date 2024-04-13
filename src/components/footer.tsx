@@ -4,17 +4,17 @@ import Logo from './logo';
 
 export default function Footer() {
   return (
-    <footer className='flex flex-col md:flex-row justify-between items-center mt-auto px-2 py-4 md:py-3 border-t border-smoke'>
+    <footer className='mt-auto flex flex-col items-center justify-between border-t border-smoke px-2 py-4 md:flex-row md:py-3'>
       <Logo />
-      <div className='flex flex-row justify-between gap-4 items-center nano mt-4 md:mt-0 md:me-2'>
+      <div className='nano mt-4 flex flex-row items-center justify-between gap-4 md:me-2 md:mt-0'>
         <Link
           href='/privacy'
-          className='p-1 hover:text-blue-500 hover:border-blue-500 hover:border-b'>
+          className='p-1 hover:border-b hover:border-blue-500 hover:text-blue-500'>
           Privacy
         </Link>
         <Link
           href='/privacy/cookies'
-          className='p-1 hover:text-blue-500 hover:border-blue-500 hover:border-b'>
+          className='p-1 hover:border-b hover:border-blue-500 hover:text-blue-500'>
           Cookies
         </Link>
         <p>©{new Date().getFullYear()} PrimaMateria</p>

@@ -4,7 +4,7 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:tailwindcss/recommended"
   ],
   "plugins": ["@typescript-eslint", "simple-import-sort", "react-hooks", "prettier"],
   "parser": "@typescript-eslint/parser",
@@ -17,5 +17,6 @@
     "simple-import-sort/exports": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
-  }
+  },
+  "settings": { "tailwindcss": { "whitelist": ["bg-${colorName}-${shade}"] } }
 }
