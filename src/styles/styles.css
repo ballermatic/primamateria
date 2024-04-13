@@ -18,66 +18,12 @@
   Note fluid plugin for font size
   Adjust weight, letter spacing, line height based on font choices
   */
-  /* Headings */
   .caps {
     @apply uppercase;
     font-stretch: 125% !important;
     letter-spacing: 0.125em !important;
     line-height: 1;
   }
-  .exa {
-    @apply ~text-5xl/8xl;
-    @apply text-balance;
-    font-weight: 560;
-    letter-spacing: -0.045em;
-    line-height: 1;
-    margin-bottom: 0.5em;
-  }
-  .peta {
-    @apply ~text-4xl/7xl;
-    @apply text-balance;
-    font-weight: 535;
-    letter-spacing: -0.033em;
-    line-height: 1;
-    margin-bottom: 0.5em;
-  }
-  .tera {
-    @apply ~text-3xl/6xl;
-    @apply text-balance;
-    font-weight: 509;
-    letter-spacing: -0.0275em;
-    line-height: 1.1;
-    margin-bottom: 0.5em;
-  }
-  .giga {
-    @apply ~text-2xl/5xl;
-    @apply text-balance;
-    font-weight: 484;
-    letter-spacing: -0.025em;
-    line-height: 1.125;
-    margin-bottom: 0.5em;
-  }
-  .mega {
-    @apply ~text-xl/3xl;
-    @apply text-balance;
-    font-weight: 484;
-    letter-spacing: -0.02em;
-    line-height: 1.125;
-    margin-bottom: 0.5em;
-  }
-  .kilo {
-    @apply ~text-xl/3xl;
-    @apply text-balance;
-    font-weight: 410;
-    letter-spacing: -0.02em;
-    line-height: 1.125;
-    margin-bottom: 0.5em;
-  }
-  .nano {
-    @apply ~text-xxs/xs !important;
-    letter-spacing: 0.075em;
-  }
-  /* Body Text */
   .lede > p {
     @apply ~text-lg/xl;
     @apply text-balance;
@@ -85,6 +31,16 @@
     @apply hyphens-none;
     font-weight: 260;
     font-stretch: 106%;
+    line-height: 1.67;
+    margin-block-start: 0.75em;
+  }
+  .font-serif > .lede > p,
+  .font-serif.lede > p {
+    @apply ~text-lg/xl;
+    @apply text-balance;
+    @apply max-w-prose;
+    @apply hyphens-none;
+    font-weight: 310;
     line-height: 1.67;
     margin-block-start: 0.75em;
   }
@@ -98,6 +54,16 @@
     line-height: 1.67;
     margin-block-start: 0.75em;
   }
+  .font-serif > .narrative > p,
+  .font-serif.narrative > p {
+    @apply ~text-base/lg;
+    @apply text-balance;
+    @apply max-w-prose;
+    @apply hyphens-auto;
+    font-weight: 320;
+    line-height: 1.67;
+    margin-block-start: 0.75em;
+  }
   .caption > p {
     @apply ~text-sm/base;
     @apply text-balance;
@@ -105,6 +71,17 @@
     @apply hyphens-auto;
     font-weight: 310;
     font-stretch: 103%;
+    letter-spacing: 0.005em;
+    margin-block-start: 0.75em;
+    line-height: 1.67;
+  }
+  .font-serif > .caption > p,
+  .font-serif.caption > p {
+    @apply ~text-sm/base;
+    @apply text-balance;
+    @apply max-w-prose;
+    @apply hyphens-auto;
+    font-weight: 333;
     letter-spacing: 0.005em;
     margin-block-start: 0.75em;
     line-height: 1.67;
