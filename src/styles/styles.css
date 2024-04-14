@@ -34,15 +34,8 @@
     line-height: 1.67;
     margin-block-start: 0.75em;
   }
-  .font-serif > .lede > p,
-  .font-serif.lede > p {
-    @apply ~text-lg/xl;
-    @apply text-balance;
-    @apply max-w-prose;
-    @apply hyphens-none;
-    font-weight: 310;
-    line-height: 1.67;
-    margin-block-start: 0.75em;
+  .font-serif > .lede > * {
+    font-weight: 333;
   }
   .narrative > p {
     @apply ~text-base/lg;
@@ -54,15 +47,8 @@
     line-height: 1.67;
     margin-block-start: 0.75em;
   }
-  .font-serif > .narrative > p,
-  .font-serif.narrative > p {
-    @apply ~text-base/lg;
-    @apply text-balance;
-    @apply max-w-prose;
-    @apply hyphens-auto;
+  .font-serif > .narrative > * {
     font-weight: 320;
-    line-height: 1.67;
-    margin-block-start: 0.75em;
   }
   .caption > p {
     @apply ~text-sm/base;
@@ -75,15 +61,8 @@
     margin-block-start: 0.75em;
     line-height: 1.67;
   }
-  .font-serif > .caption > p,
-  .font-serif.caption > p {
-    @apply ~text-sm/base;
-    @apply text-balance;
-    @apply max-w-prose;
-    @apply hyphens-auto;
+  .font-serif > .caption > * {
     font-weight: 333;
     letter-spacing: 0.005em;
-    margin-block-start: 0.75em;
-    line-height: 1.67;
   }
 }
