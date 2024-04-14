@@ -9,8 +9,8 @@ const todos: ListItem[] = [
   { icon: 'CircleAlert', item: 'Better medium size heading presets' },
   { icon: 'CircleAlert', item: 'Forms' },
   { icon: 'CircleAlert', item: 'Handy components: layouts/sections, social, etc' },
-  { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
   { icon: 'CircleAlert', item: 'Payload CMS 3.x' },
+  { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
   { icon: 'CircleAlert', item: 'Open Graph image generation' },
   { icon: 'CircleAlert', item: 'GSAP animation presets + Replace CSS animation with GSAP' },
 ];
@@ -19,11 +19,11 @@ export default function HomePage() {
   return (
     <main className='container mx-auto flex flex-col items-center p-12 '>
       <div className='flex max-w-xl flex-col items-center text-center'>
-        <Mark className='size-64 ~mb-12/24' />
+        <Mark className='size-64 ~my-12/24' />
         <Heading
           level='h1'
           preset='exa'
-          className='mb-0'>
+          className='mb-3'>
           Prima Materia
         </Heading>
         <Heading
@@ -48,7 +48,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className='my-12 flex w-full flex-col gap-6 md:flex-row'>
+      <div className='my-12 grid w-full grid-flow-row gap-6 md:grid-cols-3'>
         <Link
           href='/colors'
           className='group grow rounded-sm border border-smoke bg-gradient-to-br from-transparent via-transparent to-blue-50 p-6 px-5 hover:border-blue-500 hover:to-blue-100'>
@@ -79,7 +79,7 @@ export default function HomePage() {
             </span>
           </Heading>
           <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
-            Font face specific typography classes via @apply
+            Font-specific components and classes
           </p>
         </Link>
 
@@ -95,9 +95,7 @@ export default function HomePage() {
               <ArrowRight size={18} />
             </span>
           </Heading>
-          <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>
-            Playing with typography and color
-          </p>
+          <p className='m-0 max-w-[30ch] group-hover:text-blue-500'>Play around. No sand.</p>
         </Link>
       </div>
 
@@ -113,14 +111,17 @@ export default function HomePage() {
             <p className='font-semibold uppercase'>Basics</p>
             <div className='mb-1'>------</div>
             <ul>
-              <li className='mb-2'>Next.js 14.1.x app router</li>
+              <li className='mb-2'>Next.js 14 app router</li>
               <li className='mb-2'>
-                Tailwind 3.4.x <span className='italic'>(4.x soon)</span>
+                Tailwind 3.4: <span className='italic'>(4.x soon)</span>
               </li>
-              <li className='mb-2'>React Hook Form + Zod</li>
+              <li className='mb-2'>
+                React Hook Form + Zod <span className='italic'>(WIP)</span>
+              </li>
               <li className='mb-2'>Bundle Analyzer</li>
               <li className='mb-2'>Next Sitemap</li>
               <li className='mb-2'>ESLint + Prettier</li>
+              <li className='mb-2'>Tailwind Fluid</li>
             </ul>
           </div>
           <div className='mb-3 md:hidden'>========================</div>
@@ -128,9 +129,9 @@ export default function HomePage() {
             <p className='font-semibold uppercase'>Extras</p>
             <div className='mb-1'>------</div>
             <ul>
-              <li className='mb-2'>Heading component with extensive typographic tuning</li>
+              <li className='mb-2'>Opinionated/tuned typography</li>
               <li className='mb-2'>
-                Curated{' '}
+                Variable{' '}
                 <Link
                   href='https://github.com/mona-sans'
                   target='_blank'
@@ -151,12 +152,10 @@ export default function HomePage() {
                   className='text-acid-500 underline hover:text-acid-300'>
                   mono
                 </Link>{' '}
-                webfonts
+                fonts
               </li>
               <li className='mb-2'>Support for variable font settings</li>
               <li className='mb-2'>More colors via tints.dev (OKLCH)</li>
-              <li className='mb-2'>Tailwind Fluid</li>
-              <li className='mb-2'>Tuned typography</li>
             </ul>
           </div>
         </div>

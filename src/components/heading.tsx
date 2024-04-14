@@ -25,38 +25,33 @@ export default function Heading({
   const styles = {
     exa: {
       default:
-        '~text-5xl/8xl text-balance font-semiexpanded font-[560] tracking-[-0.045em] leading-none mb-[0.5em]',
-      serif:
-        'font-serif ~text-5xl/8xl text-balance font-[520] tracking-[-0.045em] leading-none mb-[0.5em]',
+        '~text-5xl/8xl text-balance font-semiexpanded font-[560] tracking-[-0.045em] leading-none',
+      serif: 'font-serif ~text-5xl/8xl text-balance font-[520] tracking-[-0.045em] leading-none',
     },
     peta: {
       default:
-        '~text-4xl/7xl text-balance font-semiexpanded font-[535] tracking-[-0.033em] leading-none mb-[0.5em]',
-      serif:
-        'font-serif ~text-4xl/7xl text-balance font-[520] tracking-[-0.025em] leading-none mb-[0.5em]',
+        '~text-4xl/7xl text-balance font-semiexpanded font-[535] tracking-[-0.033em] leading-none',
+      serif: 'font-serif ~text-4xl/7xl text-balance font-[520] tracking-[-0.025em] leading-none',
     },
     tera: {
       default:
-        '~text-3xl/6xl text-balance font-semiexpanded font-[509] tracking-[-0.0275em] leading-none mb-[0.5em]',
+        '~text-3xl/6xl text-balance font-semiexpanded font-[509] tracking-[-0.0275em] leading-none',
       serif: 'font-serif ~text-3xl/6xl text-balance font-[490] tracking-[-0.02em]',
     },
     giga: {
       default:
-        '~text-2xl/5xl text-balance font-semiexpanded font-[484] tracking-[-0.025em] leading-[1.125] mb-[0.5em]',
-      serif:
-        'font-serif ~text-2xl/5xl text-balance font-[466] tracking-[-0.0175em] leading-none mb-[0.5em]',
+        '~text-2xl/5xl text-balance font-semiexpanded font-[484] tracking-[-0.025em] leading-[1.125',
+      serif: 'font-serif ~text-2xl/5xl text-balance font-[466] tracking-[-0.0175em] leading-none',
     },
     mega: {
       default:
-        '~text-xl/4xl text-balance font-semiexpanded font-[484] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
-      serif:
-        'font-serif ~text-xl/4xl text-balance font-[466] tracking-[-0.01em] leading-[1.125] mb-[0.5em]',
+        '~text-xl/4xl text-balance font-semiexpanded font-[484] tracking-[-0.02em] leading-[1.125',
+      serif: 'font-serif ~text-xl/4xl text-balance font-[466] tracking-[-0.01em] leading-[1.125',
     },
     kilo: {
       default:
-        '~text-xl/3xl text-balance font-semiexpanded font-[440] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
-      serif:
-        'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125] mb-[0.5em]',
+        '~text-xl/3xl text-balance font-semiexpanded font-[440] tracking-[-0.02em] leading-[1.125',
+      serif: 'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125',
     },
     nano: {
       default: '~text-xxs/xs !important font-semiexpanded tracking-wider',
