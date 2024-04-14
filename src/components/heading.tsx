@@ -5,7 +5,7 @@ import React, { ReactNode } from 'react';
 
 type HeadingProps = {
   level: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
-  preset?: 'exa' | 'peta' | 'tera' | 'giga' | 'mega' | 'kilo' | 'nano';
+  preset?: 'exa' | 'peta' | 'tera' | 'giga' | 'mega' | 'kilo' | 'hecto' | 'deci' | 'nano';
   anchor?: boolean;
   serif?: boolean;
   className?: string;
@@ -51,6 +51,16 @@ export default function Heading({
     kilo: {
       default:
         '~text-xl/3xl text-balance font-semiexpanded font-[440] tracking-[-0.02em] leading-[1.125',
+      serif: 'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125',
+    },
+    hecto: {
+      default:
+        '~text-lg/2xl text-balance font-semiexpanded font-[420] tracking-[-0.02em] leading-[1.125',
+      serif: 'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125',
+    },
+    deci: {
+      default:
+        '~text-lg/xl text-balance font-semiexpanded font-[420] tracking-[-0.02em] leading-[1.125',
       serif: 'font-serif ~text-xl/3xl text-balance font-[390] tracking-[-0.02em] leading-[1.125',
     },
     nano: {

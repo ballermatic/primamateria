@@ -92,6 +92,51 @@ export default function TypographyPage() {
           text='kilo'
         />
       </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='hecto'>
+          Brisk ferns envelop damp pathways
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='hecto'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='deci'>
+          Gargantuan whelks explore neptunian depths
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='deci'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='nano'>
+          Kingly sparrows fly the evening plains
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='nano'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='nano'
+          className='caps'>
+          Kingly sparrows fly the evening plains
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='nano caps'
+        />
+      </div>
       <SectionHeader title='Body Text' />
       <div className='lede'>
         <p>

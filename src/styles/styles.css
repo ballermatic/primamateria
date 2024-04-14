@@ -20,6 +20,7 @@
   */
   .caps {
     @apply uppercase;
+    @apply font-wide !important;
     font-stretch: 125% !important;
     letter-spacing: 0.125em !important;
     line-height: 1;

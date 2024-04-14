@@ -99,6 +99,55 @@ export default function TypographySerifPage() {
           text='kilo'
         />
       </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='hecto'
+          serif>
+          Brisk ferns envelop damp pathways
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='hecto'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='deci'
+          serif>
+          Gargantuan whelks explore neptunian depths
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='deci'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='nano'
+          serif>
+          Kingly sparrows fly the evening plains
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='nano'
+        />
+      </div>
+      <div className='pt-12'>
+        <Heading
+          level='h2'
+          preset='nano'
+          serif
+          className='caps font-wide'>
+          Kingly sparrows fly the evening plains
+        </Heading>
+        <SectionCategory
+          label='classname:'
+          text='nano caps'
+        />
+      </div>
       <SectionHeader title='Body Text' />
       <div className='font-serif'>
         <div className='lede'>

@@ -6,7 +6,6 @@ import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
 const todos: ListItem[] = [
-  { icon: 'CircleAlert', item: 'Better medium size heading presets' },
   { icon: 'CircleAlert', item: 'Forms' },
   { icon: 'CircleAlert', item: 'Handy components: layouts/sections, social, etc' },
   { icon: 'CircleAlert', item: 'Payload CMS 3.x' },
