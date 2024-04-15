@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import { DemoForm } from '@/components/forms/demo-form';
 import Heading from '@/components/heading';
 
 export const metadata: Metadata = {
@@ -18,7 +19,10 @@ export default function FormsPage() {
           Forms
         </Heading>
       </div>
-      <div className='narrative mb-12 flex flex-col ~gap-3/8'></div>
+      <div className='narrative mb-12 flex flex-col ~gap-3/8'>Description here</div>
+      <div>
+        <DemoForm />
+      </div>
     </main>
   );
 }

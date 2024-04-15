@@ -1,24 +1,23 @@
-// import { forwardRef } from 'react';
+import { forwardRef, InputHTMLAttributes } from 'react';
 
-// import { FormFieldError } from './form';
+import { FormFieldError } from './form';
 
-// interface InputProps {
-//   label: string;
-// }
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+}
 
-// export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-//   { label, type = 'text', ...props },
-//   ref,
-// ) {
-//   return (
-//     <div>
-//       <label>{label}</label>
-//       <input
-//         type={type}
-//         ref={ref}
-//         {...props}
-//       />
-//       <FormFieldError name={props.name} />
-//     </div>
-//   );
-// });
+export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+  { label, ...props },
+  ref,
+) {
+  return (
+    <div>
+      <label>{label}</label>
+      <input
+        ref={ref}
+        {...props}
+      />
+      <FormFieldError name={props.name} />
+    </div>
+  );
+});
