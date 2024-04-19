@@ -1,6 +1,5 @@
 // Implementation based on this blog post:
 // https://omkarkulkarni.vercel.app/blog/reusable-form-component-in-react-using-react-hook-form-and-zod
-// todo: elegant default styling, better error handling
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -70,6 +69,10 @@ export const Form = <T extends FieldValues>({
   );
 };
 
+// ================================================================
+// Errors
+// ================================================================
+
 export function FormFieldError({ name }: { name?: string }) {
   // the useFormContext hook returns the current state of hook form.
   const {
@@ -85,6 +88,10 @@ export function FormFieldError({ name }: { name?: string }) {
   return <span>{error.message}</span>;
 }
 
+// ================================================================
+// Inputs
+// ================================================================
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
 }
@@ -93,9 +100,9 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   { label, ...props },
   ref,
 ) {
-  // const {
-  //   formState: { errors },
-  // } = useFormContext();
+  const {
+    formState: { errors },
+  } = useFormContext();
 
   return (
     <div>
@@ -103,7 +110,36 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
       <input
         ref={ref}
         {...props}
-        // aria-required={errors.name ? 'true' : 'false'}
+        aria-required={errors.name ? 'true' : 'false'} //
+      />
+      <FormFieldError name={props.name} />
+    </div>
+  );
+});
+
+// ================================================================
+// Textarea
+// ================================================================
+
+interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  label: string;
+}
+
+export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
+  { label, ...props },
+  ref,
+) {
+  const {
+    formState: { errors },
+  } = useFormContext();
+
+  return (
+    <div>
+      <label>{label}</label>
+      <textarea
+        ref={ref}
+        {...props}
+        aria-required={errors[props.name as string] ? 'true' : 'false'}
       />
       <FormFieldError name={props.name} />
     </div>

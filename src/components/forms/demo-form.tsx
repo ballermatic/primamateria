@@ -3,7 +3,7 @@
 import { z } from 'zod';
 
 import Button from '../button';
-import { Form, Input, useForm } from './forms';
+import { Form, Input, Textarea, useForm } from './forms';
 
 // Declare validation and shape of form
 // Phone Regex
@@ -57,12 +57,11 @@ export function DemoForm() {
         checked
         {...form.register('checkbox')}
       />
-      {/* <Input
+      <Textarea
         label='Message'
-        type='textarea'
         rows={3}
         {...form.register('textarea')}
-      /> */}
+      />
       <Button type='submit'>Submit</Button>
     </Form>
   );
