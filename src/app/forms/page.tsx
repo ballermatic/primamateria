@@ -29,7 +29,8 @@ export default function FormsPage() {
             className='hover:text-blue-500 hover:underline'>
             abstracted form component
           </Link>{' '}
-          courtesy of Omkar Kulkarni.
+          courtesy of Omkar Kulkarni.{' '}
+          <span className='font-medium italic'>This demo does not collect information.</span>
         </p>
       </div>
       <div>

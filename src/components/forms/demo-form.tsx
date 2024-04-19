@@ -35,6 +35,7 @@ export function DemoForm() {
         label='First name'
         type='text'
         placeholder='Jane'
+        required
         {...form.register('firstName')}
       />
       <Input
@@ -42,6 +43,7 @@ export function DemoForm() {
         label='Last name'
         type='text'
         placeholder='Smith'
+        required
         {...form.register('lastName')}
       />
       <Input
@@ -49,6 +51,7 @@ export function DemoForm() {
         label='Email'
         type='email'
         placeholder='you@example.com'
+        required
         {...form.register('email')}
       />
       <Input
@@ -62,8 +65,9 @@ export function DemoForm() {
         inputName='checkbox'
         label='Required checkbox'
         defaultChecked
+        required
         {...form.register('checkbox')}>
-        <p>Optional description goes here, if desired.</p>
+        <p className='text-sm'>Optional description goes here, if desired.</p>
       </Checkbox>
       <Textarea
         inputName='message'

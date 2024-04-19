@@ -6,7 +6,6 @@ import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
 const todos: ListItem[] = [
-  { icon: 'CircleAlert', item: 'Forms' },
   { icon: 'CircleAlert', item: 'Handy components: layouts/sections, social, etc' },
   { icon: 'CircleAlert', item: 'Payload CMS 3.x' },
   { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
@@ -114,9 +113,7 @@ export default function HomePage() {
               <li className='mb-2'>
                 Tailwind 3.4: <span className='italic'>(4.x soon)</span>
               </li>
-              <li className='mb-2'>
-                React Hook Form + Zod <span className='italic'>(WIP)</span>
-              </li>
+              <li className='mb-2'>React Hook Form + Zod</li>
               <li className='mb-2'>Bundle Analyzer</li>
               <li className='mb-2'>Next Sitemap</li>
               <li className='mb-2'>ESLint + Prettier</li>

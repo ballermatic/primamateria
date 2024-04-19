@@ -7,6 +7,7 @@
 
 // function to resolve zod schema we provide
 import { zodResolver } from '@hookform/resolvers/zod';
+import { clsx } from 'clsx';
 import { forwardRef, InputHTMLAttributes } from 'react';
 // We will fully type `<Form />` component by providing component props and fwding // those
 import { ComponentProps } from 'react';
@@ -98,10 +99,11 @@ export function FormFieldError({ name, className }: { name?: string; className?:
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   inputName: string;
   label: string;
+  required?: boolean;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { label, inputName, ...props },
+  { label, inputName, required = false, ...props },
   ref,
 ) {
   const {
@@ -113,12 +115,16 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   return (
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
-        className='font-medium'
+        className={clsx(
+          'relative flex items-center justify-between font-medium',
+          required &&
+            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+        )}
         htmlFor={inputName}>
         {label}
       </label>
       <input
-        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
+        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/40 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         ref={ref}
         id={inputName}
         name={inputName}
@@ -140,11 +146,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
 interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   inputName: string;
   label: string;
+  required?: boolean;
   children?: React.ReactNode;
 }
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Input(
-  { label, inputName, children, ...props },
+  { label, inputName, required = false, children, ...props },
   ref,
 ) {
   const {
@@ -167,9 +174,13 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
             {...props}
           />
         </div>
-        <div className='ml-2'>
+        <div className='ml-2 flex w-full flex-col'>
           <label
-            className='font-medium'
+            className={clsx(
+              'relative flex items-center justify-between font-medium',
+              required &&
+                'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+            )}
             htmlFor={inputName}>
             {label}
           </label>
@@ -191,10 +202,11 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
 interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   inputName: string;
   label: string;
+  required?: boolean;
 }
 
 export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
-  { label, inputName, ...props },
+  { label, inputName, required = false, ...props },
   ref,
 ) {
   const {
@@ -206,7 +218,11 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
   return (
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
-        className='font-medium'
+        className={clsx(
+          'relative flex items-center justify-between font-medium',
+          required &&
+            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+        )}
         htmlFor={inputName}>
         {label}
       </label>
