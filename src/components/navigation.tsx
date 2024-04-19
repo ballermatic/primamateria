@@ -181,7 +181,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
           <Link
             key={index}
             href={item.href}
-            className={clsx('mt-1 border-b-2 border-transparent p-2', {
+            className={clsx('mt-1 border-b-4 border-transparent p-2', {
               'hover:text-blue-500 hover:border-blue-500 hover:border-b-2': !isCurrentPage,
               'text-gray-500 pointer-events-none': isCurrentPage,
             })}>
