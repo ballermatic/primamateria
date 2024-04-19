@@ -2,22 +2,20 @@
 
 import { z } from 'zod';
 
-import { Form, useForm } from './form';
-import { Input } from './input';
+import Button from '../button';
+import { Form, Input, useForm } from './forms';
 
-// declare validation and shape of form
-
+// Declare validation and shape of form
+// Phone Regex
+const phoneRegex = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/);
+// Zod schema
 const demoFormSchema = z.object({
-  firstName: z.string().min(1, 'First Name must be atleast 1 characters long!'),
-  username: z
-    .string()
-    .min(1, 'Username must be atleast 1 characters long!')
-    .max(10, 'Consider using shorter username.'),
+  firstName: z.string().min(1, 'First name must be at least 1 character'),
+  lastName: z.string().min(1, 'Last name must be at least 1 character'),
   email: z.string().email('Please enter a valid email address.'),
-  password: z
-    .string()
-    .min(6, 'Please choose a longer password')
-    .max(256, 'Consider using a short password'),
+  checkbox: z.boolean({ required_error: 'Please check to proceed' }),
+  phone: z.string().regex(phoneRegex, 'Invalid Number!').optional().or(z.literal('')),
+  textarea: z.string().optional(),
 });
 
 export function DemoForm() {
@@ -30,30 +28,42 @@ export function DemoForm() {
       form={form}
       onSubmit={(values) => alert('form submitted with ' + JSON.stringify(values))}>
       <Input
-        label='Your first name'
+        label='First name'
         type='text'
-        placeholder='John'
+        placeholder='Jane'
         {...form.register('firstName')}
       />
       <Input
-        label='Choose username'
+        label='Last name'
         type='text'
-        placeholder='im_john_doe'
-        {...form.register('username')}
+        placeholder='Smith'
+        {...form.register('lastName')}
       />
       <Input
-        label='Email Address'
+        label='Email'
         type='email'
         placeholder='you@example.com'
         {...form.register('email')}
       />
       <Input
-        label='Password'
-        type='password'
-        placeholder='Your password (min 6)'
-        {...form.register('password')}
+        label='Phone number'
+        type='tel'
+        placeholder='123-456-7890'
+        {...form.register('phone')}
       />
-      <button type='submit'>Submit </button>
+      <Input
+        label='Required checkbox'
+        type='checkbox'
+        checked
+        {...form.register('checkbox')}
+      />
+      {/* <Input
+        label='Message'
+        type='textarea'
+        rows={3}
+        {...form.register('textarea')}
+      /> */}
+      <Button type='submit'>Submit</Button>
     </Form>
   );
 }

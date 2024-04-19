@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 import { DemoForm } from '@/components/forms/demo-form';
 import Heading from '@/components/heading';
@@ -19,7 +20,18 @@ export default function FormsPage() {
           Forms
         </Heading>
       </div>
-      <div className='narrative mb-12 flex flex-col ~gap-3/8'>Description here</div>
+      <div className='narrative mb-12 flex flex-col ~gap-3/8'>
+        <p>
+          Using React Hook Form, Zod, and an elegantly{' '}
+          <Link
+            href='https://omkarkulkarni.vercel.app/blog/reusable-form-component-in-react-using-react-hook-form-and-zod'
+            target='_blank'
+            className='hover:text-blue-500 hover:underline'>
+            abstracted form component
+          </Link>{' '}
+          courtesy of Omkar Kulkarni.
+        </p>
+      </div>
       <div>
         <DemoForm />
       </div>

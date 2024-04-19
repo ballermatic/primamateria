@@ -1,10 +1,12 @@
-// Implementation sourced from this blog post:
+// Implementation based on this blog post:
 // https://omkarkulkarni.vercel.app/blog/reusable-form-component-in-react-using-react-hook-form-and-zod
+// todo: elegant default styling, better error handling
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 // function to resolve zod schema we provide
 import { zodResolver } from '@hookform/resolvers/zod';
+import { forwardRef, InputHTMLAttributes } from 'react';
 // We will fully type `<Form />` component by providing component props and fwding // those
 import { ComponentProps } from 'react';
 import {
@@ -39,7 +41,7 @@ export const useForm = <T extends ZodSchema<any>>({ schema, ...formConfig }: Use
   });
 };
 
-// we omit the native `onSubmit` event in favor of `SubmitHandler` event
+// we omit the native onSubmit event in favor of SubmitHandler event
 // the beauty of this is, the values returned by the submit handler are fully typed
 interface FormProps<T extends FieldValues = any> extends Omit<ComponentProps<'form'>, 'onSubmit'> {
   form: UseFormReturn<T>;
@@ -54,12 +56,12 @@ export const Form = <T extends FieldValues>({
 }: FormProps<T>) => {
   return (
     <FormProvider {...form}>
-      {/* the `form` passed here is return value of useForm() hook */}
+      {/* the form passed here is return value of useForm() hook */}
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         {...props}>
         <fieldset
-          // We disable form inputs when we are submitting the form!! A tiny detail that is missed a lot of times
+          // We disable form inputs when we are submitting the form
           disabled={form.formState.isSubmitting}>
           {children}
         </fieldset>
@@ -82,3 +84,28 @@ export function FormFieldError({ name }: { name?: string }) {
 
   return <span>{error.message}</span>;
 }
+
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+}
+
+export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+  { label, ...props },
+  ref,
+) {
+  // const {
+  //   formState: { errors },
+  // } = useFormContext();
+
+  return (
+    <div>
+      <label>{label}</label>
+      <input
+        ref={ref}
+        {...props}
+        // aria-required={errors.name ? 'true' : 'false'}
+      />
+      <FormFieldError name={props.name} />
+    </div>
+  );
+});
