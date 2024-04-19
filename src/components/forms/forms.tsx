@@ -118,12 +118,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
         {label}
       </label>
       <input
+        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         ref={ref}
         id={inputName}
         name={inputName}
-        {...props}
-        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         aria-invalid={!!error}
+        {...props}
       />
       <FormFieldError
         className='absolute bottom-0 text-sm leading-none text-red-500'
@@ -158,11 +158,11 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
       <div className='relative flex items-start'>
         <div className='flex h-6 items-center'>
           <input
+            className='size-4 rounded border-smoke/30 text-smoke focus:ring-smoke aria-[invalid=true]:ring-red-500'
             ref={ref}
             id={inputName}
             name={inputName}
             type='checkbox'
-            className='size-4 rounded border-smoke/30 text-smoke focus:ring-smoke aria-[invalid=true]:ring-red-500'
             aria-invalid={!!error}
             {...props}
           />
@@ -201,17 +201,27 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
     formState: { errors },
   } = useFormContext();
 
+  const error = errors[props.name as string];
+
   return (
-    <div>
-      <label htmlFor={inputName}>{label}</label>
+    <div className='relative mb-4 flex flex-col pb-5'>
+      <label
+        className='font-medium'
+        htmlFor={inputName}>
+        {label}
+      </label>
       <textarea
+        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         ref={ref}
         id={inputName}
         name={inputName}
+        aria-invalid={!!error}
         {...props}
-        aria-required={errors[props.name as string] ? 'true' : 'false'}
       />
-      <FormFieldError name={props.name} />
+      <FormFieldError
+        className='absolute bottom-0 text-sm leading-none text-red-500'
+        name={props.name}
+      />
     </div>
   );
 });
