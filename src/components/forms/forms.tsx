@@ -1,5 +1,7 @@
+// ================================================================
 // Implementation based on this blog post:
 // https://omkarkulkarni.vercel.app/blog/reusable-form-component-in-react-using-react-hook-form-and-zod
+// ================================================================
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -47,6 +49,7 @@ interface FormProps<T extends FieldValues = any> extends Omit<ComponentProps<'fo
   onSubmit: SubmitHandler<T>;
 }
 
+// Note, may need to add styles to fieldset for complex layouts
 export const Form = <T extends FieldValues>({
   form,
   onSubmit,
@@ -73,7 +76,7 @@ export const Form = <T extends FieldValues>({
 // Errors
 // ================================================================
 
-export function FormFieldError({ name }: { name?: string }) {
+export function FormFieldError({ name, className }: { name?: string; className?: string }) {
   // the useFormContext hook returns the current state of hook form.
   const {
     formState: { errors },
@@ -85,7 +88,7 @@ export function FormFieldError({ name }: { name?: string }) {
 
   if (!error) return null;
 
-  return <span>{error.message}</span>;
+  return <span className={className}>{error.message}</span>;
 }
 
 // ================================================================
@@ -93,26 +96,90 @@ export function FormFieldError({ name }: { name?: string }) {
 // ================================================================
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  inputName: string;
   label: string;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
-  { label, ...props },
+  { label, inputName, ...props },
   ref,
 ) {
   const {
     formState: { errors },
   } = useFormContext();
 
+  const error = errors[props.name as string];
+
   return (
-    <div>
-      <label>{label}</label>
+    <div className='relative mb-4 flex flex-col pb-5'>
+      <label
+        className='font-medium'
+        htmlFor={inputName}>
+        {label}
+      </label>
       <input
         ref={ref}
+        id={inputName}
+        name={inputName}
         {...props}
-        aria-required={errors.name ? 'true' : 'false'} //
+        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
+        aria-invalid={!!error}
       />
-      <FormFieldError name={props.name} />
+      <FormFieldError
+        className='absolute bottom-0 text-sm leading-none text-red-500'
+        name={props.name}
+      />
+    </div>
+  );
+});
+
+// ================================================================
+// Checkbox
+// ================================================================
+
+interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
+  inputName: string;
+  label: string;
+  children?: React.ReactNode;
+}
+
+export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Input(
+  { label, inputName, children, ...props },
+  ref,
+) {
+  const {
+    formState: { errors },
+  } = useFormContext();
+
+  const error = errors[props.name as string];
+
+  return (
+    <div className='relative mb-4 flex flex-col pb-5'>
+      <div className='relative flex items-start'>
+        <div className='flex h-6 items-center'>
+          <input
+            ref={ref}
+            id={inputName}
+            name={inputName}
+            type='checkbox'
+            className='size-4 rounded border-smoke/30 text-smoke focus:ring-smoke aria-[invalid=true]:ring-red-500'
+            aria-invalid={!!error}
+            {...props}
+          />
+        </div>
+        <div className='ml-2'>
+          <label
+            className='font-medium'
+            htmlFor={inputName}>
+            {label}
+          </label>
+          {children}
+        </div>
+      </div>
+      <FormFieldError
+        className='absolute bottom-0 text-sm leading-none text-red-500'
+        name={props.name}
+      />
     </div>
   );
 });
@@ -122,11 +189,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
 // ================================================================
 
 interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  inputName: string;
   label: string;
 }
 
 export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function Textarea(
-  { label, ...props },
+  { label, inputName, ...props },
   ref,
 ) {
   const {
@@ -135,9 +203,11 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
 
   return (
     <div>
-      <label>{label}</label>
+      <label htmlFor={inputName}>{label}</label>
       <textarea
         ref={ref}
+        id={inputName}
+        name={inputName}
         {...props}
         aria-required={errors[props.name as string] ? 'true' : 'false'}
       />

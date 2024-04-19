@@ -20,7 +20,7 @@ export default function FormsPage() {
           Forms
         </Heading>
       </div>
-      <div className='narrative mb-12 flex flex-col ~gap-3/8'>
+      <div className='narrative mb-12 flex flex-col'>
         <p>
           Using React Hook Form, Zod, and an elegantly{' '}
           <Link
