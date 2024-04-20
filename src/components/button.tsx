@@ -11,20 +11,16 @@ type ButtonProps = {
 export default function Button({ invert = false, className, children, ...props }: ButtonProps) {
   className = clsx(
     className,
-    'inline-flex rounded-full px-4 py-1.5 transition',
-    invert
-      ? 'bg-white text-neutral-950 hover:bg-neutral-200'
-      : 'bg-neutral-950 text-white hover:bg-neutral-800',
+    'inline-flex rounded-full px-5 py-3 font-medium leading-none transition',
+    invert ? 'bg-white text-smoke hover:bg-neutral-200' : 'bg-smoke text-white hover:bg-smoke/60',
   );
-
-  const inner = <span className='relative top-px'>{children}</span>;
 
   if (typeof props.href === 'undefined') {
     return (
       <button
         className={className}
         {...props}>
-        {inner}
+        {children}
       </button>
     );
   }
@@ -33,7 +29,7 @@ export default function Button({ invert = false, className, children, ...props }
     <Link
       className={className}
       {...props}>
-      {inner}
+      {children}
     </Link>
   );
 }

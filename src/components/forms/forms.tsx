@@ -116,15 +116,15 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
         className={clsx(
-          'relative flex items-center justify-between font-medium',
+          'relative mb-1 flex items-center justify-between font-medium',
           required &&
-            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',
         )}
         htmlFor={inputName}>
         {label}
       </label>
       <input
-        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/40 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
+        className='block w-full rounded-md border-0 bg-white py-1.5 shadow-inner ring-1 ring-inset ring-smoke/40 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         ref={ref}
         id={inputName}
         name={inputName}
@@ -165,7 +165,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
       <div className='relative flex items-start'>
         <div className='flex h-6 items-center'>
           <input
-            className='size-4 rounded border-smoke/30 text-smoke focus:ring-smoke aria-[invalid=true]:ring-red-500'
+            className='size-4 rounded border-smoke/40 bg-white text-smoke shadow-inner focus:ring-smoke aria-[invalid=true]:ring-red-500'
             ref={ref}
             id={inputName}
             name={inputName}
@@ -179,7 +179,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
             className={clsx(
               'relative flex items-center justify-between font-medium',
               required &&
-                'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+                'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',
             )}
             htmlFor={inputName}>
             {label}
@@ -219,15 +219,15 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
         className={clsx(
-          'relative flex items-center justify-between font-medium',
+          'relative mb-1 flex items-center justify-between font-medium',
           required &&
-            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/40 after:content-["required"]',
+            'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',
         )}
         htmlFor={inputName}>
         {label}
       </label>
       <textarea
-        className='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-smoke/30 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
+        className='block w-full rounded-md border-0 bg-white py-1.5 shadow-inner ring-1 ring-inset ring-smoke/40 placeholder:text-smoke/40 focus:ring-inset focus:ring-smoke aria-[invalid=true]:ring-red-500'
         ref={ref}
         id={inputName}
         name={inputName}
