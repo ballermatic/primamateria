@@ -34,33 +34,6 @@ function MenuSmall({
   menuOpen: boolean;
   menuToggle: (open: boolean) => void;
 }) {
-  // Show or hide small menu header on scroll
-  const [showSmallMenuHeader, setShowSmallMenuHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const smallMenuHeaderVisibility = () => {
-    if (typeof window !== 'undefined') {
-      if (window.scrollY > lastScrollY) {
-        // if scrolling down, hide the navbar
-        setShowSmallMenuHeader(false);
-      } else {
-        // if scrolling up, show the navbar
-        setShowSmallMenuHeader(true);
-      }
-      // remember the current page location for the next move
-      setLastScrollY(window.scrollY);
-    }
-  };
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', smallMenuHeaderVisibility);
-
-      // cleanup function
-      return () => {
-        window.removeEventListener('scroll', smallMenuHeaderVisibility);
-      };
-    }
-  }, [lastScrollY]); // eslint-disable-line
-
   // To disable current menu link
   const pathname = usePathname();
 
@@ -90,11 +63,13 @@ function MenuSmall({
   );
 
   return (
-    <nav
-      className={clsx('fixed inset-0 z-50 h-12 delay-300 duration-500 ease-in-out', {
-        'translate-y-0 delay-0': showSmallMenuHeader,
-        '-translate-y-12': !showSmallMenuHeader,
-      })}>
+    // Failed attempt at show/hide using css animation and state
+    // <nav
+    //   className={clsx('fixed inset-0 z-50 h-12 delay-300 duration-500 ease-in-out', {
+    //     'translate-y-0 delay-0': showSmallMenuHeader,
+    //     '-translate-y-12': !showSmallMenuHeader,
+    //   })}>
+    <nav className='fixed inset-0 z-50 h-12'>
       <header
         className={clsx(
           'fixed inset-0 z-40 flex h-12 flex-row items-center justify-between border-b border-smoke/50 duration-300 ease-in-out',
