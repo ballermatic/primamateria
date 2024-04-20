@@ -18,14 +18,27 @@ export default function TypographySerifPage() {
         level='h1'
         preset='tera'
         serif
-        className='flex justify-between font-serif ~mb-6/12'>
+        className='flex justify-between gap-9 font-serif ~mb-6/12'>
         Typography: Bitter
         <Link
           href='/typography'
-          className='inline-flex items-center gap-2 font-sans text-gray-500 hover:text-blue-500'>
+          className='inline-flex items-center gap-1 font-sans text-gray-500 hover:text-blue-500'>
           Sans <ArrowRight />
         </Link>
       </Heading>
+      <div className='bg-smoke px-7 py-6 font-mono text-sm text-white md:w-1/2'>
+        <p className='mb-4 font-semibold uppercase'>Heading Component Properties</p>
+        <ul className='*:mb-4'>
+          <li>
+            <span className='font-semibold'>level:</span> h1 through h5, required
+          </li>
+          <li>
+            preset: size and style settings (exa, peta, tera, giga, mega, kilo, hecto, deci, nano)
+          </li>
+          <li>anchor: generates named anchor tag link to heading</li>
+          <li>serif: toggle serif font and settings</li>
+        </ul>
+      </div>
       <SectionHeader title='Headings' />
       <div className='pt-12'>
         <Heading

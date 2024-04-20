@@ -17,14 +17,27 @@ export default function TypographyPage() {
       <Heading
         level='h1'
         preset='tera'
-        className='flex justify-between ~mb-6/12'>
+        className='flex justify-between gap-9 ~mb-6/12'>
         Typography: Mona Sans{' '}
         <Link
           href='/typography/serif'
-          className='inline-flex items-center gap-2 font-serif font-normal text-gray-500 hover:text-blue-500'>
+          className='inline-flex items-center gap-1 font-serif font-normal text-gray-500 hover:text-blue-500'>
           Serif <ArrowRight />
         </Link>
       </Heading>
+      <div className='bg-smoke px-7 py-6 font-mono text-sm text-white md:w-1/2'>
+        <p className='mb-4 font-semibold uppercase'>Heading Component Properties</p>
+        <ul className='*:mb-4'>
+          <li>
+            <span className='font-semibold'>level:</span> h1 through h5, required
+          </li>
+          <li>
+            preset: size and style settings (exa, peta, tera, giga, mega, kilo, hecto, deci, nano)
+          </li>
+          <li>anchor: generates named anchor tag link to heading</li>
+          <li>serif: toggle serif font and settings</li>
+        </ul>
+      </div>
       <SectionHeader title='Headings' />
       <div className='pt-12'>
         <Heading
@@ -140,13 +153,11 @@ export default function TypographyPage() {
       <SectionHeader title='Body Text' />
       <div className='lede'>
         <p>
-          In a verdant glen, quirky zebras whispered enigmatic tales under the moon’s glow.
-          Juxtaposing realms, cryptic foxes danced by the sapphire lakes, their shadows entwining
-          with twilight’s embrace.
-        </p>
-        <p>
-          Nearby, whimsical jays orchestrated a symphony, echoing through the serene canopy of the
-          enchanted forest.
+          In a verdant glen, <span className='font-serif italic'>quirky zebras whispered</span>{' '}
+          enigmatic tales under the moon’s glow. Juxtaposing realms, cryptic foxes danced by the
+          sapphire lakes, their shadows entwining with twilight’s embrace. Nearby, whimsical jays
+          orchestrated a symphony, echoing through the{' '}
+          <span className='font-serif italic'>serene canopy of the enchanted forest.</span>
         </p>
       </div>
       <SectionCategory
@@ -156,8 +167,10 @@ export default function TypographyPage() {
       <div className='narrative'>
         <p>
           On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
-          with the city’s vibrant pulse. A breeze whispered through the trees, carrying snippets of
-          chatter and the distant hum of traffic.
+          with the city’s vibrant pulse. A breeze whispered through the trees,{' '}
+          <span className='font-serif italic'>
+            carrying snippets of chatter and the distant hum of traffic.
+          </span>
         </p>
         <p>
           In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,
@@ -172,9 +185,9 @@ export default function TypographyPage() {
       />
       <div className='caption'>
         <p>
-          On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café, merging
-          with the city’s vibrant pulse. A breeze whispered through the trees, carrying snippets of
-          chatter and the distant hum of traffic.
+          On a sun-drenched street, the aroma of fresh pastries wafted from a bustling café,{' '}
+          <span className='font-serif italic'>merging with the city’s vibrant pulse.</span> A breeze
+          whispered through the trees, carrying snippets of chatter and the distant hum of traffic.
         </p>
         <p>
           In the heart of downtown, modern sculptures stood juxtaposed against historic buildings,

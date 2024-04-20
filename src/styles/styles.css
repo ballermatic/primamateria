@@ -25,45 +25,48 @@
     letter-spacing: 0.125em !important;
     line-height: 1;
   }
-  .lede > p {
+  .lede p {
     @apply ~text-lg/xl;
     @apply text-balance;
     @apply hyphens-none;
-    font-weight: 260;
+    font-weight: 320;
     font-stretch: 106%;
     line-height: 1.67;
     margin-block-start: 0.75em;
     max-width: 75ch;
   }
-  .font-serif > .lede > * {
-    font-weight: 333;
+  .font-serif .lede,
+  .lede .font-serif {
+    font-weight: 355;
   }
-  .narrative > p {
+  .narrative p {
     @apply ~text-base/lg;
     @apply text-balance;
     @apply hyphens-auto;
-    font-weight: 283;
+    font-weight: 333;
     font-stretch: 103%;
     line-height: 1.67;
     margin-block-start: 0.75em;
     max-width: 75ch;
   }
-  .font-serif > .narrative > * {
-    font-weight: 320;
+  .font-serif .narrative,
+  .narrative .font-serif {
+    font-weight: 367;
   }
-  .caption > p {
+  .caption p {
     @apply ~text-sm/base;
     @apply text-balance;
     @apply hyphens-auto;
-    font-weight: 310;
+    font-weight: 383;
     font-stretch: 103%;
     letter-spacing: 0.005em;
     line-height: 1.67;
     margin-block-start: 0.75em;
     max-width: 75ch;
   }
-  .font-serif > .caption > * {
-    font-weight: 333;
+  .font-serif .caption,
+  .caption .font-serif {
+    font-weight: 410;
     letter-spacing: 0.005em;
   }
 }

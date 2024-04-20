@@ -103,29 +103,29 @@ export default function HomePage() {
           className='mb-3 text-lg font-medium'>
           Specification
         </Heading>
-        <div className='flex flex-col bg-smoke p-6 font-mono text-sm text-white ~gap-4/8 md:flex-row'>
+        <div className='flex flex-col bg-smoke px-7 py-6 font-mono text-sm text-white ~gap-4/8 md:flex-row'>
           <div className='md:w-1/2'>
             <p className='font-semibold uppercase'>Basics</p>
             <div className='mb-1'>------</div>
-            <ul>
-              <li className='mb-2'>Next.js 14 app router</li>
-              <li className='mb-2'>
+            <ul className='*:mb-2'>
+              <li>Next.js 14 app router</li>
+              <li>
                 Tailwind 3.4: <span className='italic'>(4.x soon)</span>
               </li>
-              <li className='mb-2'>React Hook Form + Zod</li>
-              <li className='mb-2'>Bundle Analyzer</li>
-              <li className='mb-2'>Next Sitemap</li>
-              <li className='mb-2'>ESLint + Prettier</li>
-              <li className='mb-2'>Tailwind Fluid</li>
+              <li>React Hook Form + Zod</li>
+              <li>Bundle Analyzer</li>
+              <li>Next Sitemap</li>
+              <li>ESLint + Prettier</li>
+              <li>Tailwind Fluid</li>
             </ul>
           </div>
           <div className='mb-3 md:hidden'>========================</div>
           <div className='md:w-1/2'>
             <p className='font-semibold uppercase'>Extras</p>
             <div className='mb-1'>------</div>
-            <ul>
-              <li className='mb-2'>Opinionated/tuned typography</li>
-              <li className='mb-2'>
+            <ul className='*:mb-2'>
+              <li>Opinionated/tuned typography</li>
+              <li>
                 Variable{' '}
                 <Link
                   href='https://github.com/mona-sans'
@@ -149,8 +149,8 @@ export default function HomePage() {
                 </Link>{' '}
                 fonts
               </li>
-              <li className='mb-2'>Support for variable font settings</li>
-              <li className='mb-2'>More colors via tints.dev (OKLCH)</li>
+              <li>Support for variable font settings</li>
+              <li>More colors via tints.dev (OKLCH)</li>
             </ul>
           </div>
         </div>
