@@ -12,8 +12,6 @@ In alchemy and philosophy, prima materia, materia prima or first matter (for a p
   - [Tailwind Fluid](https://fluid.tw/)
   - More colors via [tints.dev](https://www.tints.dev/)
   - [Support for variable font settings](https://gist.github.com/annedorko/340c00ab7c5844a47c782b005fdba872)
-- Opinionated default headings typography classes via @apply
-  - Exa, Peta, Tera, Giga ... Nano, etc
 - Webfonts, both local and Google
   - [Mona Sans](https://github.com/github/mona-sans) variable sans serif font
   - [Bitter](https://fonts.google.com/specimen/Bitter) serif font makes an excellent pairing with Mona Sans

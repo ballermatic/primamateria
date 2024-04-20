@@ -6,8 +6,9 @@ import ListIcons, { ListItem } from '@/components/list-icons';
 import Mark from '@/components/logo/logo-mark';
 
 const todos: ListItem[] = [
+  { icon: 'CircleAlert', item: 'Small menu header effect via GSAP timeline and Observer' },
   { icon: 'CircleAlert', item: 'Analytics: Plausible vs Google' },
-  { icon: 'CircleAlert', item: 'GSAP animation presets + Replace CSS animation with GSAP' },
+  { icon: 'CircleAlert', item: 'Animation presets' },
   { icon: 'CircleAlert', item: 'Payload CMS 3.x' },
   { icon: 'CircleAlert', item: 'Open Graph image generation' },
 ];

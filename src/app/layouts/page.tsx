@@ -8,8 +8,6 @@ export const metadata: Metadata = {
   description: '',
 };
 
-//
-//
 const exampleListItems: ListItem[] = [
   { icon: 'CircleAlert', item: 'Example Item 1' },
   { icon: 'CircleAlert', item: 'Example Item 2' },
@@ -24,52 +22,43 @@ export default function LayoutComponentsPage() {
         <Heading
           level='h1'
           preset='giga'
-          className='mb-3 md:w-1/2'>
-          Layout Components
+          className='mb-3'>
+          Layout Patterns &amp; Components
         </Heading>
-        <p>
-          Frequently used layout patterns.{' '}
-          <span className='italic'>Very much a work in progress.</span>
-        </p>
       </div>
       <SectionHeader title='Automagically alternating paired columns' />
-      <p className='italic'>
-        #TODO fix responsiveness, simplify markup, make component – lg:justify-end allows column to
-        bleed, toggle prop?
+      <p className='mb-6'>
+        Using class <span className='bg-gray-200 p-1 font-mono'>group/groupname</span> with two
+        child divs, one with class{' '}
+        <span className='bg-gray-200 p-1 font-mono'>group-even/groupname:order-first</span> allows
+        each column to stagger on subsequent rows.
       </p>
-      <div className='my-8 space-y-8'>
-        {/* Section - 2 column */}
-        <section className='group/section'>
-          <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
-            <div className='flex justify-center gap-8'>
-              <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none bg-gray-500 lg:w-[45rem]'>
-                  <p className='nano caps p-2 text-center'>Column One</p>
-                </div>
-              </div>
-              <div className='mt-12 border border-gray-500 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
-                <p className='nano caps p-2 text-center'>Column Two</p>
-              </div>
+      <section className='grid gap-6'>
+        <div className='group/altrows'>
+          <div className='grid grid-flow-col gap-6'>
+            <div className='grow border border-gray-500 bg-gray-500 p-2 text-white'>First</div>
+            <div className='grow border border-gray-500 p-2 group-even/altrows:order-first'>
+              Next
             </div>
           </div>
-        </section>
-        {/* Section - 2 column */}
-        <section className='group/section'>
-          <div className='lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20'>
-            <div className='flex justify-center gap-8'>
-              <div className='justify-center lg:justify-end lg:group-even/section:justify-start'>
-                <div className='w-[33.75rem] flex-none bg-gray-500 lg:w-[45rem]'>
-                  <p className='nano caps p-2 text-center'>Column One</p>
-                </div>
-              </div>
-              <div className='mt-12 border border-gray-500 lg:mt-0 lg:w-[37rem] lg:flex-none lg:group-even/section:order-first'>
-                <p className='nano caps p-2 text-center'>Column Two</p>
-              </div>
+        </div>
+        <div className='group/altrows'>
+          <div className='grid grid-flow-col gap-6'>
+            <div className='grow border border-gray-500 bg-gray-500 p-2 text-white'>First</div>
+            <div className='grow border border-gray-500 p-2 group-even/altrows:order-first'>
+              Next
             </div>
           </div>
-        </section>
-      </div>
-      {/* End Alternating Section Columns */}
+        </div>
+        <div className='group/altrows'>
+          <div className='grid grid-flow-col gap-6'>
+            <div className='grow border border-gray-500 bg-gray-500 p-2 text-white'>First</div>
+            <div className='grow border border-gray-500 p-2 group-even/altrows:order-first'>
+              Next
+            </div>
+          </div>
+        </div>
+      </section>
       <SectionHeader title='Unordered list with lucide-react icons for bullets' />
       <ListIcons listItems={exampleListItems} />
     </main>
