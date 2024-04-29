@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { ReactNode } from 'react';
 
 type HeadingProps = {
-  level: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
+  level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
   preset?: 'exa' | 'peta' | 'tera' | 'giga' | 'mega' | 'kilo' | 'hecto' | 'deci' | 'nano';
   anchor?: boolean;
   serif?: boolean;
@@ -13,8 +13,8 @@ type HeadingProps = {
 };
 
 export default function Heading({
-  level,
-  preset,
+  level = 'h2',
+  preset = 'hecto',
   anchor,
   serif,
   className,

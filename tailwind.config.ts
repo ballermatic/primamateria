@@ -41,8 +41,8 @@ const config: Config = {
         tightish: '-0.01em',
       },
       // Note: colors are defined in 3 places for this demo
-      // 1. Here, below
-      // 2. /tailwind/tailwindSafelist.js - avoid tree shaking, remove in production
+      // 1. Here, of course
+      // 2. /tailwind/tailwindSafelist.js - prevents tree shaking, remove for production
       // 3. /src/app/colors/colors.json - parsed for colors page
       colors: {
         white: 'oklch(98.73% 0.004 106.47 / <alpha-value>)',

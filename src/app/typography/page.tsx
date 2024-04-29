@@ -29,10 +29,10 @@ export default function TypographyPage() {
         <p className='mb-4 font-semibold uppercase'>Heading Component Properties</p>
         <ul className='*:mb-4'>
           <li>
-            <span className='font-semibold'>level:</span> h1 through h5, required
+            <span className='font-semibold'>level:</span> h1 through h5, defaults to h2
           </li>
           <li>
-            preset: size and style settings (exa, peta, tera, giga, mega, kilo, hecto, deci, nano)
+            preset: size and style settings (exa, peta, tera, giga, mega, kilo, hecto, deci, nano), defaults to hecto
           </li>
           <li>anchor: generates named anchor tag link to heading</li>
           <li>serif: toggle serif font and settings</li>
