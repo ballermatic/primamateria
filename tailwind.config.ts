@@ -28,8 +28,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Mona Sans', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--font-serif)'],
-        mono: ['var(--font-mono)'],
+        serif: ['var(--font-serif)', ...defaultTheme.fontFamily.serif],
+        mono: ['var(--font-mono)', ...defaultTheme.fontFamily.mono],
       },
       fontSize: {
         xxs: '0.625rem',
