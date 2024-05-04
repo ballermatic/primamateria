@@ -7,7 +7,6 @@
 
 // function to resolve zod schema we provide
 import { zodResolver } from '@hookform/resolvers/zod';
-import { clsx } from 'clsx';
 import { forwardRef, InputHTMLAttributes } from 'react';
 // We will fully type `<Form />` component by providing component props and fwding // those
 import { ComponentProps } from 'react';
@@ -30,6 +29,8 @@ import {
 } from 'react-hook-form';
 // Type of zod schema
 import { TypeOf, ZodSchema } from 'zod';
+
+import { cn } from '@/lib/utils';
 
 // We provide additional option that would be our zod schema.
 interface UseFormProps<T extends ZodSchema<any>> extends UseHookFormProps<TypeOf<T>> {
@@ -115,7 +116,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   return (
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
-        className={clsx(
+        className={cn(
           'relative mb-1 flex items-center justify-between font-medium',
           required &&
             'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',
@@ -176,7 +177,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Inp
         </div>
         <div className='ml-2 flex w-full flex-col'>
           <label
-            className={clsx(
+            className={cn(
               'relative flex items-center justify-between font-medium',
               required &&
                 'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',
@@ -218,7 +219,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
   return (
     <div className='relative mb-4 flex flex-col pb-5'>
       <label
-        className={clsx(
+        className={cn(
           'relative mb-1 flex items-center justify-between font-medium',
           required &&
             'after:text-xs after:leading-none after:tracking-wide after:text-smoke/50 after:content-["required"]',

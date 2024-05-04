@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 // Select desired icons at https://lucide.dev/icons/
 // Update import and iconComponents
 import {
@@ -9,6 +8,8 @@ import {
   ExternalLink,
   OctagonX,
 } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
 
 export type ListItem = {
   icon: keyof typeof iconComponents;
@@ -33,14 +34,14 @@ type ListIconsProps = {
 
 export default function ListIcons({ listItems, className }: ListIconsProps) {
   return (
-    <ul className={clsx('list-none', className)}>
+    <ul className={cn('list-none', className)}>
       {listItems.map(({ icon: iconName, item, iconColor = 'text-gray-500' }, index) => {
         const IconComponent = iconComponents[iconName];
         return (
           <li
             key={index}
             className='relative -ms-3 mb-3 flex items-start gap-2 ps-3'>
-            <IconComponent className={clsx('inline-block', iconColor)} />
+            <IconComponent className={cn('inline-block', iconColor)} />
             <span className='flex-1'>{item}</span>
           </li>
         );

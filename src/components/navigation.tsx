@@ -1,13 +1,14 @@
 'use client';
 
 import { useGSAP } from '@gsap/react';
-import clsx from 'clsx';
 import gsap from 'gsap';
 import { Spin as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+
+import { cn } from '@/lib/utils';
 
 import Logo from './logo';
 import LogoMark from './logo/logo-mark';
@@ -65,13 +66,13 @@ function MenuSmall({
   return (
     // Failed attempt at show/hide using css animation and state
     // <nav
-    //   className={clsx('fixed inset-0 z-50 h-12 delay-300 duration-500 ease-in-out', {
+    //   className={cn('fixed inset-0 z-50 h-12 delay-300 duration-500 ease-in-out', {
     //     'translate-y-0 delay-0': showSmallMenuHeader,
     //     '-translate-y-12': !showSmallMenuHeader,
     //   })}>
     <nav className='fixed inset-0 z-50 h-12'>
       <header
-        className={clsx(
+        className={cn(
           'fixed inset-0 z-40 flex h-12 flex-row items-center justify-between border-b border-smoke/50 duration-300 ease-in-out',
           {
             'text-white': menuOpen,
@@ -109,7 +110,7 @@ function MenuSmall({
                 <Link
                   key={index}
                   href={item.href}
-                  className={clsx('inline-block p-2 text-2xl', {
+                  className={cn('inline-block p-2 text-2xl', {
                     'text-white': !isCurrentPage,
                     'text-gray-500 pointer-events-none': isCurrentPage,
                   })}
@@ -156,7 +157,7 @@ function MenuLarge({ menuPrimary }: { menuPrimary: MenuItem[] }) {
           <Link
             key={index}
             href={item.href}
-            className={clsx('mt-1 border-b-4 border-transparent p-2', {
+            className={cn('mt-1 border-b-4 border-transparent p-2', {
               'hover:text-blue-500 hover:border-blue-500 hover:border-b-2': !isCurrentPage,
               'text-gray-500 pointer-events-none': isCurrentPage,
             })}>

@@ -1,7 +1,8 @@
-import clsx from 'clsx';
 import { LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 import React, { ReactNode } from 'react';
+
+import { cn } from '@/lib/utils';
 
 type HeadingProps = {
   level?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
@@ -72,14 +73,14 @@ export default function Heading({
   // Allow serif to override
   const defaultClass = preset ? styles[preset].default : '';
   const serifClass = preset && serif ? styles[preset].serif : '';
-  const headingClass = clsx(defaultClass, serifClass, className);
+  const headingClass = cn(defaultClass, serifClass, className);
 
   return (
     <>
       {anchor ? (
         <Link
           href={`#${children!.toString().toLowerCase().replace(/ /g, '-')}`}
-          className={clsx('group inline-flex items-center gap-1', headingClass)}
+          className={cn('group inline-flex items-center gap-1', headingClass)}
           {...props}>
           {children}
           <LinkIcon className='size-[0.5em] opacity-0 group-hover:opacity-50' />

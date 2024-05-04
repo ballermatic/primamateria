@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: 'https://primamateria.vercel.app',
   generateIndexSitemap: false,
-  generateRobotsTxt: true,
+  // generateRobotsTxt: true,
   // robotsTxtOptions: {
   //   policies: [
   //     {

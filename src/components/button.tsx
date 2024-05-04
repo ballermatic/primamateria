@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import Link from 'next/link';
+
+import { cn } from '@/lib/utils';
 
 type ButtonProps = {
   invert?: boolean;
@@ -9,7 +10,7 @@ type ButtonProps = {
 );
 
 export default function Button({ invert = false, className, children, ...props }: ButtonProps) {
-  className = clsx(
+  className = cn(
     className,
     'inline-flex rounded-full px-5 py-3 font-medium leading-none transition',
     invert ? 'bg-white text-smoke hover:bg-neutral-200' : 'bg-smoke text-white hover:bg-smoke/60',
