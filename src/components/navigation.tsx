@@ -64,12 +64,6 @@ function MenuSmall({
   );
 
   return (
-    // Failed attempt at show/hide using css animation and state
-    // <nav
-    //   className={cn('fixed inset-0 z-50 h-12 delay-300 duration-500 ease-in-out', {
-    //     'translate-y-0 delay-0': showSmallMenuHeader,
-    //     '-translate-y-12': !showSmallMenuHeader,
-    //   })}>
     <nav className='fixed inset-0 z-50 h-12'>
       <header
         className={cn(
